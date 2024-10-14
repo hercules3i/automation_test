@@ -13,19 +13,59 @@ from selenium.common.exceptions import *
 from datetime import datetime
 sleeping_time = 0.25
 
+def __selectUnit(browser, task):
+    display_list_units_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-check-list-add-user/ion-content/div[2]/div[3]/ion-item/ionic-selectable/div/button')
+    display_list_units_btn.click()
+    time.sleep(sleeping_time)
+    search_input = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-header/ion-toolbar[2]/ion-searchbar/div/input')
+    search_input.clear()
+    search_input.send_keys(task.staff.strip().lower())
+    time.sleep(3)
+    father_group_choices = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list')
+    item_selected = father_group_choices.find_element(By.TAG_NAME,'ion-item-group')
+    item_selected.click()
+    time.sleep(sleeping_time)
+
+def __selectDuration(browser, task):
+    insert_duration_input = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-check-list-add-user/ion-content/div[2]/div[2]/input')
+    insert_duration_input.clear()
+    insert_duration_input.send_keys(task.duration)
+    time.sleep(sleeping_time)
+
 def __select_staff(browser,task):
-    pass
+    select_user_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-check-list-add-user/ion-content/div[2]/div[1]/ion-item/ionic-selectable/div/button')
+    select_user_btn.click()
+    time.sleep(sleeping_time)
+    # for i in range(len(list_staffs)):
+    search_input = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-header/ion-toolbar[2]/ion-searchbar/div/input')
+    search_input.clear()
+    search_input.send_keys(task.staff.strip().lower())
+    time.sleep(3)
+    father_group_choices = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list')
+    item_selected = father_group_choices.find_element(By.TAG_NAME,'ion-item-group')
+    item_selected.click()
+    time.sleep(sleeping_time)
+        
 def __findToAddStaff(browser,task):
     add_staff_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-create-card-job/ion-content/div/div[2]/div/div/ion-item/ion-row/ion-col[4]/i')
     add_staff_btn.click()
     time.sleep(sleeping_time)
     __select_staff(browser,task)
+    __selectDuration(browser, task)
+    save_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-check-list-add-user/ion-content/div[2]/div[4]/a')
+    save_btn.click()
+    time.sleep(1)   
+
     
 
 def __insert_task_name(browser, task):
+    
     div_edit_content = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/div/ion-content/quill-editor/div/div[1]')
     div_edit_content.clear()
-    div_edit_content.send_keys(task.name)
+    if task.name != None:
+        div_edit_content.send_keys(task.name)
+    else:
+        
     time.sleep(sleeping_time)
     weight_input_element = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/div/ion-header/ion-toolbar/div/input')
     weight_input_element.clear()
@@ -35,6 +75,7 @@ def __insert_task_name(browser, task):
     post_btn.click()
     time.sleep(0.5)
     __findToAddStaff(browser, task)
+    
         
 
 def __findToTasks(browser, list_tasks,jobCard_name):
@@ -42,15 +83,27 @@ def __findToTasks(browser, list_tasks,jobCard_name):
     add_task_app_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-create-card-job/ion-footer/app-menu-footer/div[1]/div/div[2]/div/div')
     add_task_app_btn.click()
     time.sleep(sleeping_time)
-    add_task_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-create-card-job/ion-header/ion-toolbar/div/a[1]')
-    add_task_btn.click()
-    time.sleep(sleeping_time)
+
     tasks = []
     for task in list_tasks:
         if jobCard_name.strip().lower() == task.card_job.strip().lower():
             tasks.append(task)
     for task in tasks:
-        __insert_task_name(browser,task)
+        try:
+            add_task_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-create-card-job/ion-header/ion-toolbar/div/a[1]')
+            add_task_btn.click()
+            time.sleep(sleeping_time)
+            __insert_task_name(browser,task)
+            time.sleep(2)
+            
+            back_to_add_new_task = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-check-list-add-user/ion-header/ion-toolbar/ion-buttons/ion-icon')
+            back_to_add_new_task.click()
+            time.sleep(0.5)
+        except Exception:
+            print(Exception)
+            continue
+    browser.get("https://ionic.3i.com.vn/time-keeping") 
+    time.sleep(4)
         
         
     
