@@ -1,5 +1,4 @@
-import time
-
+import time 
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -7,6 +6,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import WebDriverWait
 # from Task import TaskSimpleData
 from selenium.common.exceptions import *
 # from Bom import Warehouse
@@ -38,28 +38,133 @@ def __selectBranch(browser,branch: str):
     # except:
     #     raise Exception("__selectBranch()")
 
-def __selectDepartment(browser,department: str):
-    # try:
-        department = department.strip().lower()
-        print(department,len(department))
-        department_element = browser.find_element(By.XPATH,
-                                             '//*[@id="main-content"]/app-add-board/ion-content/div/div[4]/ion-item/ionic-selectable/div/button')
+# def __selectDepartment(browser,department: str):
+#     # try:
+#         department = department.strip().lower()
+#         print(department,len(department))
+#         department_element = browser.find_element(By.XPATH,
+#                                              '//*[@id="main-content"]/app-add-board/ion-content/div/div[4]/ion-item/ionic-selectable/div/button')
         
-        department_element.click()
-        time.sleep(0.25)
-        all_department= browser.find_element(By.XPATH,'//*[@id="ion-overlay-4"]/ionic-selectable-modal/ion-content')
-        all_department.click()
-        all_selection=all_department.find_elements(By.TAG_NAME,'ion-item')
-        print('len:',len(all_selection))
-        time.sleep(0.25)
-        for s in all_selection:
-            s_text = s.text
-            print(s_text,len(s_text))
-            if department == s_text.strip().lower():
-                s.click()
-                break
-    # # except:
-    # #     raise Exception("__selectDepartment()")
+#         department_element.click()
+#         time.sleep(0.25)
+#         all_department= browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content')
+#         all_department.click()
+#         all_selection=all_department.find_elements(By.TAG_NAME,'ion-item')
+#         print('len:',len(all_selection))
+#         time.sleep(0.25)
+#         for s in all_selection:
+#             s_text = s.text
+#             print(s_text,len(s_text))
+#             if department == s_text.strip().lower():
+#                 s.click()
+#                 break
+#     # # except:
+#     # #     raise Exception("__selectDepartment()")
+
+
+def __selectDepartment(browser, department: str):
+    department = department.strip().lower()
+    print(department, len(department))
+    department_element = WebDriverWait(browser, 10).until(
+        EC.element_to_be_clickable((By.XPATH, 
+            '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-add-board/ion-content/div/div[3]/ion-item/ionic-selectable/div/button'))
+    )
+    department_element.click()
+    all_department = WebDriverWait(browser, 10).until(
+        EC.visibility_of_element_located((By.XPATH, 
+            '/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content'))
+    )
+    all_department.click()
+    shadow_host = browser.find_element(By.TAG_NAME, 'ion-modal')
+    shadow_root = browser.execute_script('return arguments[0].shadowRoot', shadow_host)
+    item_groups = shadow_root.find_elements(By.TAG_NAME, 'ion-item-group')
+    found = False
+    for group in item_groups:
+        all_items = group.find_elements(By.TAG_NAME, 'ion-item')
+        for item in all_items:
+            item_shadow_root = browser.execute_script('return arguments[0].shadowRoot', item)
+            if item_shadow_root: 
+                item_text = item_shadow_root.querySelector('div').innerText.strip().lower()  
+                print(item_text, len(item_text))
+                if department == item_text:
+                    print(f"Clicking on: {item_text}")
+                    browser.execute_script("arguments[0].click();", item)
+                    found = True
+                    break
+        if found:
+            break
+
+    if not found:
+        print("Department not found.")
+
+
+# def __selectDepartment(browser, department: str):
+#     department = department.strip().lower()
+#     print(department, len(department))
+#     department_element = WebDriverWait(browser, 10).until(
+#         EC.element_to_be_clickable((By.XPATH, 
+#             '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-add-board/ion-content/div/div[3]/ion-item/ionic-selectable/div/button'))
+#     )
+#     department_element.click()
+#     all_department = WebDriverWait(browser, 10).until(
+#         EC.visibility_of_element_located((By.XPATH, 
+#             '/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content'))
+#     )
+#     all_department.click()
+#     shadow_host = browser.find_element(By.TAG_NAME, 'ion-modal')
+#     shadow_root = browser.execute_script('return arguments[0].shadowRoot', shadow_host)
+#     item_groups = shadow_root.find_elements(By.TAG_NAME, 'ion-item-group')
+#     item_groups.click()
+#     time.sleep(0.25)
+#     found = False
+#     for group in item_groups:
+#         all_items = group.find_elements(By.TAG_NAME, 'ion-item')
+#         for item in all_items:
+#             s_text = item.text.strip().lower()
+#             print(s_text, len(s_text))
+#             if department == s_text:
+#                 print(f"Clicking on: {s_text}")
+#                 browser.execute_script("arguments[0].click();", item) 
+#                 found = True
+#                 break
+#         if found:
+#             break
+
+#     if not found:
+#         print("Department not found.")
+
+
+# def __selectDepartment(browser, department: str):
+#     # try:
+#         department = department.strip().lower()
+#         print(department, len(department))
+#         department_element = browser.find_element(By.XPATH,
+#             '//*[@id="main-content"]/app-add-board/ion-content/div/div[4]/ion-item/ionic-selectable/div/button')
+        
+#         department_element.click()
+#         time.sleep(0.25) 
+#         all_department = browser.find_element(By.CSS_SELECTOR, 'i')
+#         all_department.click()
+#         time.sleep(0.25)
+#         group_xpaths = [
+#             '/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group[1]',  
+#             '/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group[2]', 
+#             '/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group[3]'   
+#         ]
+#         for group_xpath in group_xpaths:
+#             item_group = browser.find_element(By.XPATH, group_xpath)
+#             all_selection = item_group.find_elements(By.TAG_NAME, 'ion-item')
+#             print(all_selection)
+#             for s in all_selection:
+#                 s_text = s.text.strip().lower() 
+#                 print(s_text, len(s_text))
+#                 if department == s_text:
+#                     s.click()
+#                     return 
+#     # except Exception as e:
+#     #     print(f"An error occurred: {e}")
+
+
 def __selectTableType(browser,tab_type: str):
     # try:
         tab_type = tab_type.strip().lower()
@@ -72,7 +177,6 @@ def __selectTableType(browser,tab_type: str):
         li_tab_type.click()
         all_tab_types = li_tab_type.find_elements(By.TAG_NAME, 'ion-item')
         print('len:',len(all_tab_types))
-
         for s in all_tab_types:
             s_text = s.text
             if tab_type == s_text.strip().lower():
@@ -81,26 +185,6 @@ def __selectTableType(browser,tab_type: str):
     # except:
     #     raise Exception("__selectTableType()")
 
-def __selectTableType(browser,tab_type: str):
-    try:
-        tab_type = tab_type.strip().lower()
-        tab_type_element = browser.find_element(By.XPATH,
-                                             '//*[@id="modal-body"]/div/form/div/div[4]/div[1]/div/div[1]/span')
-        tab_type_element.click()
-        time.sleep(sleeping_time)
-        li_tab_type = browser.find_element(By.XPATH, '/html/body/div[1]/div/div/div[2]/div/form/div/div[4]/div[1]/div/ul/li')
-        time.sleep(sleeping_time)
-        all_tab_types = li_tab_type.find_elements(By.TAG_NAME, 'a')
-        
-        time.sleep(sleeping_time)
-
-        for s in all_tab_types:
-            s_text = s.text
-            if tab_type == s_text.strip().lower():
-                s.click()
-                break
-    except:
-        raise Exception("__selectTableType()")
 
 def __selectStartOrEndDate(browser,date: str,type):
     try:
