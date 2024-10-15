@@ -11,6 +11,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import *
 # from Bom import Warehouse
 from datetime import datetime
+from log import logger
+
 sleeping_time = 0.25
 
 def __selectUnit(browser, task):
@@ -19,7 +21,7 @@ def __selectUnit(browser, task):
     time.sleep(sleeping_time)
     search_input = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-header/ion-toolbar[2]/ion-searchbar/div/input')
     search_input.clear()
-    search_input.send_keys(task.staff.strip().lower())
+    search_input.send_keys(task.unit.strip().lower())
     time.sleep(3)
     father_group_choices = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list')
     item_selected = father_group_choices.find_element(By.TAG_NAME,'ion-item-group')
@@ -52,10 +54,24 @@ def __findToAddStaff(browser,task):
     time.sleep(sleeping_time)
     __select_staff(browser,task)
     __selectDuration(browser, task)
+    __selectUnit(browser,task)
     save_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-check-list-add-user/ion-content/div[2]/div[4]/a')
     save_btn.click()
-    time.sleep(1)   
+    try:
+            toast_container = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-toast').shadow_root
+            message = toast_container.find_element(By.CLASS_NAME, 'toast-message').text
+            print(message)
+            if "thành công" in message:
+                logger.info(message)
+            else:
+                logger.warning(message)
+    except NoSuchElementException as e:
+            logger.error(f"Element not found: {e}")
+    except Exception as e:
+            logger.error(f"An error occurred: {e}", exc_info=True)
 
+    time.sleep(1)   
+    
     
 
 def __insert_task_name(browser, task):
@@ -65,6 +81,7 @@ def __insert_task_name(browser, task):
     if task.name != None:
         div_edit_content.send_keys(task.name)
     else:
+        div_edit_content.send_keys()
         
     time.sleep(sleeping_time)
     weight_input_element = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/div/ion-header/ion-toolbar/div/input')

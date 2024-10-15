@@ -14,6 +14,9 @@ from datetime import datetime
 from staff_test import __findToStaff
 from task_test import __findToTasks
 sleeping_time = 0.25
+import logging
+from log import logger
+# Tạo logger chung
 
 def __selectWorkflow(browser, workflow):
     workflow = (workflow.strip()).lower()
@@ -36,6 +39,7 @@ def __selectWorkflow(browser, workflow):
 
     if not found:
         print("Không có workflow nào thỏa mãn.")
+        logger.warning("Khong co workflow nao thoa man.")
         close_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-header/ion-toolbar[1]/ion-buttons/ion-button')
         close_btn.click()
         time.sleep(sleeping_time)
@@ -52,45 +56,56 @@ def __save(browser):
     
 
 def __selectCardStatus(browser, card_status):
-    card_status = (card_status.strip()).lower()
-    card_status_btn = browser.find_element(By.XPATH,'//*[@id="main-content"]/app-create-card-job/ion-content/div/div[3]/div[2]/div[7]/ion-item/ionic-selectable/div/button')
-    card_status_btn.click()
-    time.sleep(sleeping_time)
-    card_status_father_element = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
-    group_card_status_label = card_status_father_element.find_elements(By.TAG_NAME,'ion-label')
-    for element in group_card_status_label:
-        print(((element.text).strip()).lower(), card_status)
-        if ((element.text).strip()).lower() == card_status:
-            element.click()
-            break
+    try:
+        card_status = (card_status.strip()).lower()
+        card_status_btn = browser.find_element(By.XPATH,'//*[@id="main-content"]/app-create-card-job/ion-content/div/div[3]/div[2]/div[7]/ion-item/ionic-selectable/div/button')
+        card_status_btn.click()
+        time.sleep(sleeping_time)
+        card_status_father_element = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+        group_card_status_label = card_status_father_element.find_elements(By.TAG_NAME,'ion-label')
+        for element in group_card_status_label:
+            print(((element.text).strip()).lower(), card_status)
+            if ((element.text).strip()).lower() == card_status:
+                element.click()
+                break
+    except Exception:
+        logger.warning(f"Khòn co status nao thoa man {card_status}")
 
 
 def __selectJobType(browser, job_type):
-    job_type = (job_type.strip()).lower()
-    job_type_btn = browser.find_element(By.XPATH,'//*[@id="main-content"]/app-create-card-job/ion-content/div/div[3]/div[2]/div[6]/ion-item/ionic-selectable/div/button')
-    job_type_btn.click()
-    time.sleep(sleeping_time)
-    job_type_father_element = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
-    group_job_type_label = job_type_father_element.find_elements(By.TAG_NAME,'ion-label')
-    for element in group_job_type_label:
-        print(((element.text).strip()).lower(), job_type)
-        if ((element.text).strip()).lower() == job_type:
-            element.click()
-            break
+    try:
+        job_type = (job_type.strip()).lower()
+        job_type_btn = browser.find_element(By.XPATH,'//*[@id="main-content"]/app-create-card-job/ion-content/div/div[3]/div[2]/div[6]/ion-item/ionic-selectable/div/button')
+        job_type_btn.click()
+        time.sleep(sleeping_time)
+        job_type_father_element = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+        group_job_type_label = job_type_father_element.find_elements(By.TAG_NAME,'ion-label')
+        for element in group_job_type_label:
+            print(((element.text).strip()).lower(), job_type)
+            if ((element.text).strip()).lower() == job_type:
+                element.click()
+                break
+    except Exception:
+        logger.warning(f"Khong co kieu cong viec {job_type}")
 
 # select priority
 def __selectPriority(browser,priority):
-    priority = (priority.strip()).lower()
-    priority_btn = browser.find_element(By.XPATH,'//*[@id="main-content"]/app-create-card-job/ion-content/div/div[3]/div[2]/div[5]/ion-item/ionic-selectable/div/button')
-    priority_btn.click()
-    time.sleep(sleeping_time)
-    priority_father_element = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
-    group_priority_label = priority_father_element.find_elements(By.TAG_NAME,'ion-label')
-    for element in group_priority_label:
-        print(((element.text).strip()).lower(), priority)
-        if ((element.text).strip()).lower() == priority:
-            element.click()
-            break
+    try:
+        
+        priority = (priority.strip()).lower()
+        priority_btn = browser.find_element(By.XPATH,'//*[@id="main-content"]/app-create-card-job/ion-content/div/div[3]/div[2]/div[5]/ion-item/ionic-selectable/div/button')
+        priority_btn.click()
+        time.sleep(sleeping_time)
+        priority_father_element = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+        group_priority_label = priority_father_element.find_elements(By.TAG_NAME,'ion-label')
+        for element in group_priority_label:
+            print(((element.text).strip()).lower(), priority)
+            if ((element.text).strip()).lower() == priority:
+                element.click()
+                break
+    except Exception:
+        logger.warning(f"Khong co do uu tien {priority}")
+        logger.error(Exception)
 def __selectStartOrEndDate(browser,date: dict,type):
 
     str_date = str(date)
@@ -210,6 +225,7 @@ def __select_tabjob(browser, tabjob_name):
 def __finJobCard(browser,list_jobcards,list_staffs,list_tasks):
 
     for i in range(len(list_jobcards)):
+        time.sleep(0.25)
         add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
         add_jobcard_element.click()
 
@@ -258,10 +274,23 @@ def __finJobCard(browser,list_jobcards,list_staffs,list_tasks):
         __selectCardStatus(browser, list_jobcards[i].card_status)
         time.sleep(sleeping_time)
         __save(browser)
+        try:
+            toast_container = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-toast').shadow_root
+            message = toast_container.find_element(By.CLASS_NAME, 'toast-message').text
+            print(message)
+            if "thành công" in message:
+                logger.info(message)
+            else:
+                logger.warn(message)
+        except NoSuchElementException as e:
+            logger.error(f"Element not found: {e}")
+        except Exception as e:
+            logger.error(f"An error occurred: {e}", exc_info=True)
+
+        
         __selectWorkflow(browser, list_jobcards[i].workflow)
         time.sleep(sleeping_time)
         __save(browser)
         __findToStaff(browser,list_staffs, list_jobcards[i].name, list_tasks)
-        break
         
     
