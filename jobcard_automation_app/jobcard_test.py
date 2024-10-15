@@ -51,6 +51,19 @@ def __save(browser):
     save_btn = browser.find_element(By.XPATH,'//*[@id="main-content"]/app-create-card-job/ion-header/ion-toolbar/div')
     save_btn.click()
     print("saving....")
+    try:
+            toast_container = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-toast').shadow_root
+            message = toast_container.find_element(By.CLASS_NAME, 'toast-message').text
+            message = message.split(" ")
+            if "thành công" in message:
+                logger.info(message)
+            else:
+                logger.warning(message)
+    except NoSuchElementException as e:
+            logger.error(f"Element not found: {e}")
+    except Exception as e:
+            logger.error(f"An error occurred: {e}", exc_info=True)
+
     time.sleep(5)
     print("done....")
     
@@ -103,9 +116,10 @@ def __selectPriority(browser,priority):
             if ((element.text).strip()).lower() == priority:
                 element.click()
                 break
-    except Exception:
+    except Exception as e:
+        print(e)
         logger.warning(f"Khong co do uu tien {priority}")
-        logger.error(Exception)
+        logger.error(e)
 def __selectStartOrEndDate(browser,date: dict,type):
 
     str_date = str(date)
@@ -146,7 +160,8 @@ def __selectStartOrEndDate(browser,date: dict,type):
                     browser.execute_script("arguments[0].click();", element)
                     time.sleep(sleeping_time)
                     break
-            except Exception:
+            except Exception as e:
+                print(e)
                 continue
 
 
@@ -224,73 +239,138 @@ def __select_tabjob(browser, tabjob_name):
 
 def __finJobCard(browser,list_jobcards,list_staffs,list_tasks):
 
-    for i in range(len(list_jobcards)):
-        time.sleep(0.25)
-        add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
-        add_jobcard_element.click()
-
-        time.sleep(sleeping_time)
-        browser.refresh()
-        time.sleep(3)
-        __select_tabjob(browser, list_jobcards[i].tab_job)
-        time.sleep(0.5)
-        if list_jobcards[i].name is None:
-            i = 2
-        cardname_input = browser.find_element(By.XPATH,"/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-create-card-job/ion-content/div/div[1]/div/input")
-        print(list_jobcards[i].name)
-        cardname_input.clear()
-        cardname_input.send_keys(list_jobcards[i].name)
-
-        start_date = list_jobcards[i].start_date
-
-        day = start_date.strftime('%d') 
-        month = start_date.strftime('%B')  # Lấy tháng dưới dạng tên tiếng Anh đầy đủ
-        year = start_date.strftime('%Y') 
-        start_date_compile = {
-            "day":day,
-            "month":month,
-            "year":year
-        }
-        
-        __selectStartOrEndDate(browser,start_date_compile, "start")
-        time.sleep(1)
-        end_date = list_jobcards[i].end_date
-
-        day = end_date.strftime('%d') 
-        month = end_date.strftime('%B')  # Lấy tháng dưới dạng tên tiếng Anh đầy đủ
-        year = end_date.strftime('%Y') 
-        end_date_compile = {
-            "day":day,
-            "month":month,
-            "year":year
-        }
-        print(end_date_compile)
-        __selectStartOrEndDate(browser,end_date_compile, "end")
-        time.sleep(0.25)
-        __selectPriority(browser,list_jobcards[i].priority)
-        time.sleep(sleeping_time)
-        __selectJobType(browser,list_jobcards[i].job_type)
-        time.sleep(sleeping_time)
-        __selectCardStatus(browser, list_jobcards[i].card_status)
-        time.sleep(sleeping_time)
-        __save(browser)
+    for i in range(9,len(list_jobcards)):
+        count_case = i
+        count_error = 0
         try:
-            toast_container = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-toast').shadow_root
-            message = toast_container.find_element(By.CLASS_NAME, 'toast-message').text
-            print(message)
-            if "thành công" in message:
-                logger.info(message)
-            else:
-                logger.warn(message)
-        except NoSuchElementException as e:
-            logger.error(f"Element not found: {e}")
-        except Exception as e:
-            logger.error(f"An error occurred: {e}", exc_info=True)
+            time.sleep(0.25)
+            add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+            add_jobcard_element.click()
 
-        
-        __selectWorkflow(browser, list_jobcards[i].workflow)
-        time.sleep(sleeping_time)
-        __save(browser)
-        __findToStaff(browser,list_staffs, list_jobcards[i].name, list_tasks)
-        
+            time.sleep(sleeping_time)
+            browser.refresh()
+            time.sleep(3)
+            __select_tabjob(browser, list_jobcards[i].tab_job)
+            time.sleep(0.5)
+            if list_jobcards[i].name is None:
+                i = 2
+            cardname_input = browser.find_element(By.XPATH,"/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-create-card-job/ion-content/div/div[1]/div/input")
+            print(list_jobcards[i].name)
+            cardname_input.clear()
+            cardname_input.send_keys(list_jobcards[i].name)
+
+            start_date = list_jobcards[i].start_date
+
+            day = start_date.strftime('%d') 
+            month = start_date.strftime('%B')  # Lấy tháng dưới dạng tên tiếng Anh đầy đủ
+            year = start_date.strftime('%Y') 
+            start_date_compile = {
+                "day":day,
+                "month":month,
+                "year":year
+            }
+            
+            __selectStartOrEndDate(browser,start_date_compile, "start")
+            time.sleep(1)
+            end_date = list_jobcards[i].end_date
+
+            day = end_date.strftime('%d') 
+            month = end_date.strftime('%B')  # Lấy tháng dưới dạng tên tiếng Anh đầy đủ
+            year = end_date.strftime('%Y') 
+            end_date_compile = {
+                "day":day,
+                "month":month,
+                "year":year
+            }
+            print(end_date_compile)
+            try:
+                __selectStartOrEndDate(browser, end_date_compile, "end")
+            except Exception as e:
+                logger.error(f"{list_jobcards[i].name} - Lỗi khi chọn ngày kết thúc cho jobcard {list_jobcards[i].name}: {e}", exc_info=True)
+                browser.get("https://ionic.3i.com.vn/time-keeping")
+                time.sleep(1)
+                continue  # Tiếp tục vòng lặp nếu có lỗi
+
+            time.sleep(0.25)
+
+            try:
+                __selectPriority(browser, list_jobcards[i].priority)
+            except Exception as e:
+                logger.error(f"{list_jobcards[i].name} - Lỗi khi chọn mức độ ưu tiên cho jobcard {list_jobcards[i].name}: {e}", exc_info=True)
+                browser.get("https://ionic.3i.com.vn/time-keeping")
+                time.sleep(1)
+                continue  # Tiếp tục vòng lặp nếu có lỗi
+
+            time.sleep(sleeping_time)
+
+            try:
+                __selectJobType(browser, list_jobcards[i].job_type)
+            except Exception as e:
+                logger.error(f"{list_jobcards[i].name} - Lỗi khi chọn loại công việc cho jobcard {list_jobcards[i].name}: {e}", exc_info=True)
+                browser.get("https://ionic.3i.com.vn/time-keeping")
+                time.sleep(1)
+                continue  # Tiếp tục vòng lặp nếu có lỗi
+
+            time.sleep(sleeping_time)
+
+            try:
+                __selectCardStatus(browser, list_jobcards[i].card_status)
+            except Exception as e:
+                logger.error(f"{list_jobcards[i].name} - Lỗi khi chọn trạng thái thẻ cho jobcard {list_jobcards[i].name}: {e}", exc_info=True)
+                browser.get("https://ionic.3i.com.vn/time-keeping")
+                time.sleep(1)
+                continue  # Tiếp tục vòng lặp nếu có lỗi
+
+            time.sleep(sleeping_time)
+
+            try:
+                __save(browser)
+            except Exception as e:
+                logger.error(f"{list_jobcards[i].name} - Lỗi khi lưu jobcard {list_jobcards[i].name}: {e}", exc_info=True)
+                browser.get("https://ionic.3i.com.vn/time-keeping")
+                time.sleep(1)
+                continue  # Tiếp tục vòng lặp nếu có lỗi
+
+            time.sleep(sleeping_time)
+
+            try:
+                __selectWorkflow(browser, list_jobcards[i].workflow)
+            except Exception as e:
+                logger.error(f"{list_jobcards[i].name} - Lỗi khi chọn luồng công việc cho jobcard {list_jobcards[i].name}: {e}", exc_info=True)
+                browser.get("https://ionic.3i.com.vn/time-keeping")
+                time.sleep(1)
+                continue  # Tiếp tục vòng lặp nếu có lỗi
+
+            time.sleep(sleeping_time)
+
+            try:
+                __save(browser)
+            except Exception as e:
+                logger.error(f"{list_jobcards[i].name} - Lỗi khi lưu luồng công việc cho jobcard {list_jobcards[i].name}: {e}", exc_info=True)
+                browser.get("https://ionic.3i.com.vn/time-keeping")
+                time.sleep(1)
+                continue  # Tiếp tục vòng lặp nếu có lỗi
+
+            time.sleep(sleeping_time)
+
+            try:
+                __findToStaff(browser, list_staffs, list_jobcards[i].name, list_tasks)
+            except Exception as e:
+                logger.error(f"{list_jobcards[i].name} - Lỗi khi tìm nhân viên cho jobcard {list_jobcards[i].name}: {e}", exc_info=True)
+                browser.get("https://ionic.3i.com.vn/time-keeping")
+                time.sleep(1)
+                continue  # Tiếp tục vòng lặp nếu có lỗi
+
+
+
+        except Exception as e:
+            logger.error(f"{list_jobcards[i].name} - An error occurred: {e}", exc_info=True)
+            if count_error == 2:
+                browser.get("https://ionic.3i.com.vn/time-keeping")
+                time.sleep(1)
+                continue
+            
+            count_error+=1
+            i = i - 1
+            
     

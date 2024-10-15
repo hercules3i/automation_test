@@ -63,112 +63,123 @@ def __selectStaff(browser, list_staffs, jobcard_name):
             cancel_element = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal[2]/ionic-selectable-modal/ion-header/ion-toolbar[1]/ion-buttons/ion-button')
             cancel_element.click()
             time.sleep(sleeping_time)
-            logger.warning(f"Khong co nhan vien ten: {list_staffs[i]}")
+            logger.warning(f"{jobcard_name} - Khong co nhan vien ten: {list_staffs[i]}")
         
     # ok_element = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal[2]/ionic-selectable-modal/ion-footer/ion-toolbar/ion-row/ion-col/ion-button')
     # ok_element.click()
     # time.sleep(0.5)
     ok_done_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/div/ion-content/div/div[5]')
     ok_done_btn.click()
-    time.sleep(0.5)
     try:
             toast_container = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-toast').shadow_root
             message = toast_container.find_element(By.CLASS_NAME, 'toast-message').text
-            print(message)
+            message = message.split(" ")
             if "thành công" in message:
-                logger.info(message)
+                logger.info(f"{jobcard_name} - {message}")
             else:
-                logger.warn(message)
+                logger.warning(f"{jobcard_name} - {message}")
     except NoSuchElementException as e:
-            logger.error(f"Element not found: {e}")
+            logger.error(f"{jobcard_name} - Element not found: {e}")
     except Exception as e:
-            logger.error(f"An error occurred: {e}", exc_info=True)
+            logger.error(f"{jobcard_name} - An error occurred: {e}", exc_info=True)
+    time.sleep(0.5)
+
 
 
 def __selectDepartment(browser, list_staffs, jobcard_name):
-    list_staffs = [staff for staff in list_staffs if staff.card_job.strip().lower() == jobcard_name.strip().lower()]
-    list_departments = list_staffs[0].department_group
-    # Cập nhật các phần tử của list_departments
-    for i in range(len(list_departments)):
-        list_departments[i] = list_departments[i].strip().lower()
-        if list_departments[i] == None or list_departments[i] == "":
-            list_departments[i] == "tất cả người dùng"
-    print(str(list_departments))
-    # Tìm nút "display_departments_btn" trên giao diện web
-    display_departments_btn = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-modal/div/ion-content/div/div[2]/ion-item/ionic-selectable/div/button')
-    display_departments_btn.click()
-    time.sleep(0.5)
-    while True:
-        try:
-            father_group_choices = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-modal[2]/ionic-selectable-modal/ion-content/ion-list')
-        except:
-            continue
-        if father_group_choices:
-            break
-    list_choices = father_group_choices.find_elements(By.TAG_NAME,'ion-label')
+    try:
+        list_staffs = [staff for staff in list_staffs if staff.card_job.strip().lower() == jobcard_name.strip().lower()]
+        list_departments = list_staffs[0].department_group
+        # Cập nhật các phần tử của list_departments
+        for i in range(len(list_departments)):
+            list_departments[i] = list_departments[i].strip().lower()
+            if list_departments[i] == None or list_departments[i] == "":
+                list_departments[i] == "tất cả người dùng"
+        print(str(list_departments))
+        # Tìm nút "display_departments_btn" trên giao diện web
+        display_departments_btn = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-modal/div/ion-content/div/div[2]/ion-item/ionic-selectable/div/button')
+        display_departments_btn.click()
+        time.sleep(0.5)
+        while True:
+            try:
+                father_group_choices = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-modal[2]/ionic-selectable-modal/ion-content/ion-list')
+            except:
+                continue
+            if father_group_choices:
+                break
+        list_choices = father_group_choices.find_elements(By.TAG_NAME,'ion-label')
 
-    # Tạm dừng trong một khoảng thời gian (nếu cần thiết)
-    time.sleep(sleeping_time)
-    is_done = False
-    for element in list_choices:
-        print(((element.text).strip()).lower(),list_departments)
-        if ((element.text).strip()).lower() in list_departments:
-            element.click()
-            is_done = True
-            time.sleep(sleeping_time)
-    if is_done == False:    
-        all_users_label = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal[2]/ionic-selectable-modal/ion-content/ion-list/ion-item-group[1]/ion-item/ion-label')
-        all_users_label.click()
+        # Tạm dừng trong một khoảng thời gian (nếu cần thiết)
         time.sleep(sleeping_time)
-    ok_element = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal[2]/ionic-selectable-modal/ion-footer/ion-toolbar/ion-row/ion-col/ion-button')
-    ok_element.click()
-    time.sleep(sleeping_time)
+        is_done = False
+        for element in list_choices:
+            print(((element.text).strip()).lower(),list_departments)
+            if ((element.text).strip()).lower() in list_departments:
+                element.click()
+                is_done = True
+                time.sleep(sleeping_time)
+        if is_done == False:    
+            all_users_label = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal[2]/ionic-selectable-modal/ion-content/ion-list/ion-item-group[1]/ion-item/ion-label')
+            all_users_label.click()
+            time.sleep(sleeping_time)
+        ok_element = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal[2]/ionic-selectable-modal/ion-footer/ion-toolbar/ion-row/ion-col/ion-button')
+        ok_element.click()
+        time.sleep(sleeping_time)
+    except:
+        logger.warning(f"{jobcard_name} - Khong co phong ban nhom nao thoa man {str(list_departments)}")
 
 def __selectBranch(browser, list_staffs, jobcard_name):
-    # Lọc các staff có card_job bằng jobcard_name
-    list_staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
-    branch = list_staffs[0].branch_agency
-    print(branch)
-    # Tìm nút "display_branchs_btn" trên giao diện web
-    display_branchs_btn = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-modal/div/ion-content/div/div[1]/ion-item/ionic-selectable/div/button')
-    display_branchs_btn.click()
-    # Tạm dừng trong một khoảng thời gian (nếu cần thiết)
-    time.sleep(sleeping_time)
-    branch = (branch.strip()).lower()
-    branch_father_element = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal[2]/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
-    group_branch_label = branch_father_element.find_elements(By.TAG_NAME,'ion-label')
-    for element in group_branch_label:
-        print(((element.text).strip()).lower(), branch)
-        if ((element.text).strip()).lower() == branch:
-            element.click()
-            break
-    
+    try:
+        # Lọc các staff có card_job bằng jobcard_name
+        list_staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+        branch = list_staffs[0].branch_agency
+        print(branch)
+        # Tìm nút "display_branchs_btn" trên giao diện web
+        display_branchs_btn = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-modal/div/ion-content/div/div[1]/ion-item/ionic-selectable/div/button')
+        display_branchs_btn.click()
+        # Tạm dừng trong một khoảng thời gian (nếu cần thiết)
+        time.sleep(sleeping_time)
+        branch = (branch.strip()).lower()
+        branch_father_element = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal[2]/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+        group_branch_label = branch_father_element.find_elements(By.TAG_NAME,'ion-label')
+        for element in group_branch_label:
+            print(((element.text).strip()).lower(), branch)
+            if ((element.text).strip()).lower() == branch:
+                element.click()
+                break
+    except:
+        logger.warning(f"{jobcard_name} - Khong co nhanh nao thoa man {branch}")
+        
+        
 
 
 
 def __findToStaff(browser, list_staffs,jobCard_name, list_tasks):
-    time.sleep(1)
-    while True:
-        
-        apps_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-create-card-job/ion-footer/app-menu-footer/div/div[2]')
-        if apps_btn:
-            apps_btn.click()
-            break
-        else:
-            continue
-        
-    time.sleep(sleeping_time)
-    add_staff_app_btn = browser.find_element(By.XPATH,'//*[@id="main-content"]/app-create-card-job/ion-footer/app-menu-footer/div[1]/div/div[5]/div/div')
-    add_staff_app_btn.click()
-    time.sleep(sleeping_time)
-    add_staff_btn_shadow = browser.find_element(By.XPATH,'//*[@id="main-content"]/app-create-card-job/ion-content/div/div[2]/div/div/app-working-schedule-assign/ion-content/div[1]/span/ion-icon').shadow_root
-    add_staff_btn = add_staff_btn_shadow.find_element(By.CSS_SELECTOR,'[class="icon-inner"]')
-    add_staff_btn.click()
-    time.sleep(sleeping_time)
-    __selectBranch(browser,list_staffs, jobCard_name)
-    time.sleep(sleeping_time)
-    __selectDepartment(browser,list_staffs, jobCard_name)
-    time.sleep(sleeping_time)
-    __selectStaff(browser,list_staffs, jobCard_name)
-    time.sleep(sleeping_time)
-    __findToTasks(browser,list_tasks,jobCard_name)
+    try:
+        time.sleep(1)
+        while True:
+            
+            apps_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-create-card-job/ion-footer/app-menu-footer/div/div[2]')
+            if apps_btn:
+                apps_btn.click()
+                break
+            else:
+                continue
+            
+        time.sleep(sleeping_time)
+        add_staff_app_btn = browser.find_element(By.XPATH,'//*[@id="main-content"]/app-create-card-job/ion-footer/app-menu-footer/div[1]/div/div[5]/div/div')
+        add_staff_app_btn.click()
+        time.sleep(sleeping_time)
+        add_staff_btn_shadow = browser.find_element(By.XPATH,'//*[@id="main-content"]/app-create-card-job/ion-content/div/div[2]/div/div/app-working-schedule-assign/ion-content/div[1]/span/ion-icon').shadow_root
+        add_staff_btn = add_staff_btn_shadow.find_element(By.CSS_SELECTOR,'[class="icon-inner"]')
+        add_staff_btn.click()
+        time.sleep(sleeping_time)
+        __selectBranch(browser,list_staffs, jobCard_name)
+        time.sleep(sleeping_time)
+        __selectDepartment(browser,list_staffs, jobCard_name)
+        time.sleep(sleeping_time)
+        __selectStaff(browser,list_staffs, jobCard_name)
+        time.sleep(sleeping_time)
+        __findToTasks(browser,list_tasks,jobCard_name)
+    except Exception as e:
+            logger.error(f"{jobCard_name} - An error occurred: {e}", exc_info=True)
