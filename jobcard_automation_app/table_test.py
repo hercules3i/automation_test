@@ -119,35 +119,13 @@ def __selectStartOrEndDate(browser,date: dict,type):
     ion_datetime_shadow = browser.find_element(By.TAG_NAME,'ion-datetime').shadow_root
 
     # select day
-    next_month_btn = ion_datetime_shadow.find_element(By.CSS_SELECTOR,'[class="calendar-next-prev"]')
+    # next_month_btn = ion_datetime_shadow.find_element(By.CSS_SELECTOR,'[class="calendar-next-prev"]')
 
-    ion_button_ele = next_month_btn.find_elements(By.TAG_NAME,'ion-button')
-    print(ion_button_ele[0].tag_name)
-    ion_button_ele[1].click()
-    time.sleep(sleeping_time)
-    group_day_dad_ele = ion_datetime_shadow.find_element(By.CSS_SELECTOR,'[class="calendar-month-grid"]')
-    list_days_btn = group_day_dad_ele.find_elements(By.TAG_NAME, 'button')
-    print(len(list_days_btn))
-    for element in list_days_btn:
-        print(f"Element text: '{element.text}', Expected day: {int(date['day'])}")
-        
-        # Kiểm tra nếu element.text rỗng hoặc không phải số
-        if element.text == None or element.text == '':
-            print(f"Skipping invalid element with text: '{element.text}'")
-            continue
-        else:
-        # So sánh giá trị của element.text với ngày
-            try:
-                if int(element.text) == int(date['day']):
-                    print(f"Clicking element with tag: {element.tag_name}")
-                    
-                    # Thực hiện click bằng JavaScript
-                    browser.execute_script("arguments[0].click();", element)
-                    time.sleep(sleeping_time)
-                    break
-            except Exception as e:
-                print(e)
-                continue
+    # ion_button_ele = next_month_btn.find_elements(By.TAG_NAME,'ion-button')
+    # print(ion_button_ele[0].tag_name)
+    # ion_button_ele[1].click()
+    # time.sleep(0.5)
+   
 
     # select month and year
     time.sleep(2)
@@ -189,87 +167,131 @@ def __selectStartOrEndDate(browser,date: dict,type):
             break
 
     time.sleep(3)
+    test = ion_datetime_shadow.find_element(By.CSS_SELECTOR,'[class="calendar-month-year"]')
+    ion_item_ele = test.find_element(By.TAG_NAME,'ion-item')
+    ion_label_btn = ion_item_ele.find_element(By.TAG_NAME,'ion-label')
+    ion_label_btn.click()
+    time.sleep(0.5)
+    group_day_dad_ele = ion_datetime_shadow.find_element(By.CSS_SELECTOR,'[class="calendar-month-grid"]')
+    list_days_btn = group_day_dad_ele.find_elements(By.TAG_NAME, 'button')
+    print(len(list_days_btn))
+    for element in list_days_btn:
+        print(f"Element text: '{element.text}', Expected day: {int(date['day'])}")
+        
+        # Kiểm tra nếu element.text rỗng hoặc không phải số
+        if element.text == None or element.text == '':
+            print(f"Skipping invalid element with text: '{element.text}'")
+            continue
+        else:
+        # So sánh giá trị của element.text với ngày
+            try:
+                if int(element.text) == int(date['day']):
+                    print(f"Clicking element with tag: {element.tag_name}")
+                    
+                    # Thực hiện click bằng JavaScript
+                    browser.execute_script("arguments[0].click();", element)
+                    time.sleep(sleeping_time)
+                    break
+            except Exception as e:
+                print(e)
+                continue
     ok_element = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/div/ion-header/ion-toolbar/ion-buttons[2]')
     ok_element.click()
         
 
     
 def __finTableJob(browser, tables):
-
+    priority = 0
     for new_table in tables:
-        list_app_elements = browser.find_element(By.XPATH, '//*[@id="main-content"]/app-time-keeping/ion-footer/app-menu-footer/div/div[2]/button')
-        list_app_elements.click()
-        time.sleep(0.25)
-        tab_job_btn = browser.find_element(By.XPATH, '//*[@id="main-content"]/app-time-keeping/ion-footer/app-menu-footer/div[1]/div/div[3]/div')
-        tab_job_btn.click()
-        time.sleep(0.25)
-        show_tabjobs_btn = browser.find_element(By.XPATH, '//*[@id="main-content"]/app-time-keeping/ion-content/div/div/div[1]/div/div[1]/label/i')
-        show_tabjobs_btn.click()
-        time.sleep(1)
-                
-        # Locate the table body element
-        tbody_tabjob_element = browser.find_element(By.XPATH, '//*[@id="main-content"]/app-time-keeping/ion-content/div/div/div[1]/div/div[2]/div/table/tbody')
-        tr_elements = tbody_tabjob_element.find_elements(By.TAG_NAME, "tr")
-        existed_tables = []
-
-        for i in range(1, len(tr_elements) + 1):
-            # Find the second column of each row
-            td_element = tbody_tabjob_element.find_element(By.XPATH, f'//*[@id="main-content"]/app-time-keeping/ion-content/div/div/div[1]/div/div[2]/div/table/tbody/tr[{i}]/td[2]')
-            tab_job_name = td_element.text  # .text is an attribute, not a method
-            existed_tables.append(tab_job_name)
-
-        print(existed_tables)
-
-        if new_table.name not in existed_tables:
-            add_button = browser.find_element(By.XPATH, '//*[@id="main-content"]/app-time-keeping/ion-header/ion-toolbar/div/div/img')
-            add_button.click()
-            time.sleep(0.25)
-            browser.refresh()
-            time.sleep(3)
-            
-            name_input = browser.find_element(By.XPATH, '//*[@id="main-content"]/app-add-board/ion-content/div/div[1]/div/input')
-            name_input.clear()
-            name_input.send_keys(new_table.name)
-            time.sleep(0.5)
-            
-            __selectBranch(browser,new_table.branch)
-            time.sleep(0.5)
-            
-            __selectDepartment(browser,new_table.department)
-            time.sleep(0.25)
-            
-            __selectTableType(browser,new_table.tab_type)
-            time.sleep(0.25)
-            start_date = new_table.start_date
-
-            day = start_date.strftime('%d') 
-            month = start_date.strftime('%B')  # Lấy tháng dưới dạng tên tiếng Anh đầy đủ
-            year = start_date.strftime('%Y') 
-            start_date_compile = {
-                "day":day,
-                "month":month,
-                "year":year
-            }
-            
-            __selectStartOrEndDate(browser,start_date_compile, "start")
-            time.sleep(1)
-            end_date = new_table.end_date
-
-            day = end_date.strftime('%d') 
-            month = end_date.strftime('%B')  # Lấy tháng dưới dạng tên tiếng Anh đầy đủ
-            year = end_date.strftime('%Y') 
-            end_date_compile = {
-                "day":day,
-                "month":month,
-                "year":year
-            }
-            print(end_date_compile)
-            __selectStartOrEndDate(browser, end_date_compile, "end")
-            time.sleep(sleeping_time)
-            save_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-add-board/ion-header/ion-toolbar/div/i')
-            save_btn.click()
-            time.sleep(0.5)
-            browser.get("https://ionic.3i.com.vn/time-keeping")
+        priority+= 1
+        if priority >= 5:
+            retry_count = 0
+            max_retries = 3  # Số lần thử lại tối đa
             time.sleep(2)
+           
+            while retry_count < max_retries:
+                try:
+                    list_app_elements = browser.find_element(By.XPATH, '//*[@id="main-content"]/app-time-keeping/ion-footer/app-menu-footer/div/div[2]/button')
+                    list_app_elements.click()
+                    time.sleep(0.25)
+                    tab_job_btn = browser.find_element(By.XPATH, '//*[@id="main-content"]/app-time-keeping/ion-footer/app-menu-footer/div[1]/div/div[3]/div')
+                    tab_job_btn.click()
+                    time.sleep(0.25)
+                    show_tabjobs_btn = browser.find_element(By.XPATH, '//*[@id="main-content"]/app-time-keeping/ion-content/div/div/div[1]/div/div[1]/label/i')
+                    show_tabjobs_btn.click()
+                    time.sleep(1)
+                            
+                            # Locate the table body element
+                    tbody_tabjob_element = browser.find_element(By.XPATH, '//*[@id="main-content"]/app-time-keeping/ion-content/div/div/div[1]/div/div[2]/div/table/tbody')
+                    tr_elements = tbody_tabjob_element.find_elements(By.TAG_NAME, "tr")
+                    existed_tables = []
 
-            
+                    for i in range(1, len(tr_elements) + 1):
+                                # Find the second column of each row
+                        td_element = tbody_tabjob_element.find_element(By.XPATH, f'//*[@id="main-content"]/app-time-keeping/ion-content/div/div/div[1]/div/div[2]/div/table/tbody/tr[{i}]/td[2]')
+                        tab_job_name = td_element.text
+                        existed_tables.append(tab_job_name)
+
+                    print(existed_tables)
+                    if new_table.name not in existed_tables:
+                        add_button = browser.find_element(By.XPATH, '//*[@id="main-content"]/app-time-keeping/ion-header/ion-toolbar/div/div/img')
+                        add_button.click()
+                        time.sleep(0.25)
+                        browser.refresh()
+                        time.sleep(3)
+
+                        name_input = browser.find_element(By.XPATH, '//*[@id="main-content"]/app-add-board/ion-content/div/div[1]/div/input')
+                        name_input.clear()
+                        name_input.send_keys(new_table.name)
+                        time.sleep(0.5)
+
+                        # Chọn branch, department, table type
+                        __selectBranch(browser, new_table.branch)
+                        time.sleep(0.5)
+                        
+                        __selectDepartment(browser, new_table.department)
+                        time.sleep(0.25)
+
+                        __selectTableType(browser, new_table.tab_type)
+                        time.sleep(0.25)
+
+                        # Xử lý start date
+                        start_date = new_table.start_date
+                        day = start_date.strftime('%d')
+                        month = start_date.strftime('%B')
+                        year = start_date.strftime('%Y')
+                        start_date_compile = {"day": day, "month": month, "year": year}
+                        __selectStartOrEndDate(browser, start_date_compile, "start")
+                        time.sleep(1)
+
+                        # Xử lý end date
+                        end_date = new_table.end_date
+                        day = end_date.strftime('%d')
+                        month = end_date.strftime('%B')
+                        year = end_date.strftime('%Y')
+                        end_date_compile = {"day": day, "month": month, "year": year}
+                        print(end_date_compile)
+                        __selectStartOrEndDate(browser, end_date_compile, "end")
+
+                        time.sleep(sleeping_time)
+
+                        # Lưu bảng
+                        save_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-add-board/ion-header/ion-toolbar/div/i')
+                        save_btn.click()
+                        time.sleep(0.5)
+                        logger.info(f"Bảng'{new_table.name}' đã được thêm thành công")
+                        browser.get("https://ionic.3i.com.vn/time-keeping")
+                        time.sleep(2)
+
+                    # Nếu chạy thành công, thoát khỏi vòng lặp
+                    break
+
+                except Exception as e:
+                    retry_count += 1
+                    print(f"Error processing table {new_table.name}. Retrying {retry_count}/{max_retries}...")
+                    browser.get("https://ionic.3i.com.vn/time-keeping")
+                    time.sleep(sleeping_time)
+                    if retry_count >= max_retries:
+                        print(f"Failed to process table {new_table.name} after {max_retries} attempts. Skipping to the next table.")
+                    else:
+                        time.sleep(2)  # Thời gian chờ trước khi thử lại

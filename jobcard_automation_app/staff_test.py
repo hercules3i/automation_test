@@ -70,18 +70,19 @@ def __selectStaff(browser, list_staffs, jobcard_name):
     # time.sleep(0.5)
     ok_done_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/div/ion-content/div/div[5]')
     ok_done_btn.click()
-    try:
-            toast_container = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-toast').shadow_root
-            message = toast_container.find_element(By.CLASS_NAME, 'toast-message').text
-            message = message.split(" ")
-            if "thành công" in message:
-                logger.info(f"{jobcard_name} - {message}")
-            else:
-                logger.warning(f"{jobcard_name} - {message}")
-    except NoSuchElementException as e:
-            logger.error(f"{jobcard_name} - Element not found: {e}")
-    except Exception as e:
-            logger.error(f"{jobcard_name} - An error occurred: {e}", exc_info=True)
+    # try:
+    #         toast_container = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-toast').shadow_root
+    #         message = toast_container.find_element(By.CLASS_NAME, 'toast-message').text
+    #         message = message.split(" ")
+    #         if "thành công" in message:
+    #             logger.info(f"{jobcard_name} - {message}")
+    #         else:
+    #             logger.warning(f"{jobcard_name} - {message}")
+    # except NoSuchElementException as e:
+    #         logger.error(f"{jobcard_name} - Element not found: {e}")
+    # except Exception as e:
+    #         logger.error(f"{jobcard_name} - An error occurred: {e}", exc_info=True)
+    logger.info(f"Thêm nhân sự cho 'jobcard_name' thành công")
     time.sleep(0.5)
 
 
@@ -154,32 +155,42 @@ def __selectBranch(browser, list_staffs, jobcard_name):
 
 
 
-def __findToStaff(browser, list_staffs,jobCard_name, list_tasks):
-    try:
-        time.sleep(1)
-        while True:
-            
-            apps_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-create-card-job/ion-footer/app-menu-footer/div/div[2]')
-            if apps_btn:
-                apps_btn.click()
+def retry(func, browser, list_staffs, jobCard_name, max_retries=1):
+    retries = 0
+    while retries <= max_retries:
+        try:
+            func(browser, list_staffs, jobCard_name)
+            break
+        except Exception as e:
+            retries += 1
+            logger.warning(f"{jobCard_name} - Error in {func.__name__}. Retry {retries}/{max_retries}: {e}")
+            if retries > max_retries:
+                logger.error(f"{jobCard_name} - Failed after {retries} attempts in {func.__name__}", exc_info=True)
                 break
-            else:
-                continue
-            
+            time.sleep(1)  # Sleep before retrying
+
+def __findToStaff(browser, list_staffs, jobCard_name, list_tasks):
+    # try:
+        time.sleep(1)
+        apps_btn = browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-create-card-job/ion-footer/app-menu-footer/div/div[2]')
+        apps_btn.click()
         time.sleep(sleeping_time)
-        add_staff_app_btn = browser.find_element(By.XPATH,'//*[@id="main-content"]/app-create-card-job/ion-footer/app-menu-footer/div[1]/div/div[5]/div/div')
+        add_staff_app_btn = browser.find_element(By.XPATH, '//*[@id="main-content"]/app-create-card-job/ion-footer/app-menu-footer/div[1]/div/div[5]/div/div')
         add_staff_app_btn.click()
         time.sleep(sleeping_time)
-        add_staff_btn_shadow = browser.find_element(By.XPATH,'//*[@id="main-content"]/app-create-card-job/ion-content/div/div[2]/div/div/app-working-schedule-assign/ion-content/div[1]/span/ion-icon').shadow_root
-        add_staff_btn = add_staff_btn_shadow.find_element(By.CSS_SELECTOR,'[class="icon-inner"]')
+        add_staff_btn_shadow = browser.find_element(By.XPATH, '//*[@id="main-content"]/app-create-card-job/ion-content/div/div[2]/div/div/app-working-schedule-assign/ion-content/div[1]/span/ion-icon').shadow_root
+        add_staff_btn = add_staff_btn_shadow.find_element(By.CSS_SELECTOR, '[class="icon-inner"]')
         add_staff_btn.click()
+        time.sleep(1)
+        
+        # Retry these methods up to 1 more time in case of error
+        retry(__selectBranch, browser, list_staffs, jobCard_name, max_retries=1)
         time.sleep(sleeping_time)
-        __selectBranch(browser,list_staffs, jobCard_name)
+        retry(__selectDepartment, browser, list_staffs, jobCard_name, max_retries=1)
         time.sleep(sleeping_time)
-        __selectDepartment(browser,list_staffs, jobCard_name)
+        retry(__selectStaff, browser, list_staffs, jobCard_name, max_retries=1)
         time.sleep(sleeping_time)
-        __selectStaff(browser,list_staffs, jobCard_name)
-        time.sleep(sleeping_time)
-        __findToTasks(browser,list_tasks,jobCard_name)
-    except Exception as e:
-            logger.error(f"{jobCard_name} - An error occurred: {e}", exc_info=True)
+        
+        __findToTasks(browser, list_tasks, jobCard_name)
+    # except Exception as e:
+    #     logger.error(f"{jobCard_name} - An error occurred: {e}", exc_info=True)

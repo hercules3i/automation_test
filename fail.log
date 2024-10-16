@@ -1,20 +1,731 @@
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
+Cán bộ ban tổ chức - Khong co phong ban nhom nao thoa man ['cán bộ ban tổ chức']
+Cán bộ ban tổ chức - Khong co phong ban nhom nao thoa man ['cán bộ ban tổ chức']
+Cán bộ ban tổ chức - Khong co phong ban nhom nao thoa man ['cán bộ ban tổ chức']
+Phòng Kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
+Phòng Kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
+Phòng Kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
+Phòng Kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
+Phòng kỹ thuật - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
+Phòng kỹ thuật - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
+Phòng kỹ thuật - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
+Phòng kỹ thuật - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
+Phòng nhân sự  - Khong co phong ban nhom nao thoa man ['phòng nhân sự']
+Phòng kinh doanh - Khong co phong ban nhom nao thoa man ['phòng kinh doanh']
+Phòng kinh doanh - Khong co phong ban nhom nao thoa man ['phòng kinh doanh']
+Phòng kinh doanh - Khong co phong ban nhom nao thoa man ['phòng kinh doanh']
 Ban giám đốc - Khong co phong ban nhom nao thoa man ['ban giám đốc']
-Phòng kỹ thuật  - Khong co phong ban nhom nao thoa man ['phòng kỹ thuật']
+Phòng kinh doanh - Khong co phong ban nhom nao thoa man ['phòng kinh doanh']
 Ban giám đốc - Khong co phong ban nhom nao thoa man ['ban giám đốc']
+Ban giám đốc - Khong co phong ban nhom nao thoa man ['ban giám đốc']
+None - Case: 1 - Không có bảng việc tên None nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 223, in __select_tabjob
+    input_search_element.send_keys(tabjob_name.strip().lower())
+                                   ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+Khong co workflow nao thoa man.
+Dự án xây dựng - Khong co dau muc ten Chuẩn bị Dự án hoac khong co du lieu
+Dự án xây dựng - Khong co nhan vien ten: Nguyễn Thế Việt 
+Dự án xây dựng - Khong co thoi han hoac khong co du lieu: 1.0
+Dự án xây dựng - Khong co don vi hoac khong co du lieu: Năm
+Dự án xây dựng - Khong co dau muc ten Thiết kế, thi công hoac khong co du lieu
+Khong co workflow nao thoa man.
+Hợp đồng sản xuất với đối tác nước ngoài - Khong co dau muc ten None hoac khong co du lieu
+Khong co workflow nao thoa man.
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co nhan vien ten: hồ gia bảo bí thư
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co nhan vien ten: Hồ Gia Bảo bí thư
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co thoi han hoac khong co du lieu: 6.0
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co don vi hoac khong co du lieu: Giờ
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co dau muc ten Tạo hợp đồng hoac khong co du lieu
+Khong co workflow nao thoa man.
+Hợp đồng sản xuất và bảo trì - Khong co dau muc ten Tạo hợp đồng hoac khong co du lieu
+Hợp đồng sản xuất và bảo trì - Khong co nhan vien ten: Phạm Hoàng Doanh
+Hợp đồng sản xuất và bảo trì - Khong co thoi han hoac khong co du lieu: 5.0
+Hợp đồng sản xuất và bảo trì - Khong co don vi hoac khong co du lieu: Quý 
+Hợp đồng sản xuất và bảo trì - Khong co dau muc ten Duyệt hợp đồng hoac khong co du lieu
+Hợp đồng sản xuất và lắp ráp - Khong co nhan vien ten: nguyễn quang huy
+Hợp đồng sản xuất và lắp ráp - Khong co nhan vien ten: Nguyễn Quang Huy
+Hợp đồng sản xuất và lắp ráp - Khong co thoi han hoac khong co du lieu: 10.0
+Hợp đồng sản xuất và lắp ráp - Khong co don vi hoac khong co du lieu: Giờ
+Hợp đồng sản xuất và lắp ráp - Khong co dau muc ten Tạo hợp đồng hoac khong co du lieu
+Khong co workflow nao thoa man.
+Hợp đồng sản xuất theo khối lượng lớn - Khong co nhan vien ten: lê duy dương
+Hợp đồng sản xuất theo khối lượng lớn - Khong co nhan vien ten: Lê Duy Dương
+Hợp đồng sản xuất theo khối lượng lớn - Khong co thoi han hoac khong co du lieu: 9.0
+Hợp đồng sản xuất theo khối lượng lớn - Khong co don vi hoac khong co du lieu: Giờ
+Hợp đồng sản xuất theo khối lượng lớn - Khong co dau muc ten Tạo hợp đồng hoac khong co du lieu
+Khong co workflow nao thoa man.
+Hợp đồng sản xuất độc quyền - Khong co nhan vien ten: nguyễn ngọc hiệp
+Hợp đồng sản xuất độc quyền - Khong co nhan vien ten: Nguyễn Ngọc Hiệp
+Hợp đồng sản xuất độc quyền - Khong co thoi han hoac khong co du lieu: 3.0
+Hợp đồng sản xuất độc quyền - Khong co don vi hoac khong co du lieu: Giờ
+Hợp đồng sản xuất độc quyền - Khong co dau muc ten Tạo hợp đồng hoac khong co du lieu
+Hợp đồng liên doanh sản xuất - Case: 9 - Không có bảng việc tên BETA 1 (REACTJS - NODEJS) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7265AB095+29557]
+	(No symbol) [0x00007FF72651FA50]
+	(No symbol) [0x00007FF7263DB56A]
+	(No symbol) [0x00007FF72642F695]
+	(No symbol) [0x00007FF72642F8EC]
+	(No symbol) [0x00007FF72647B777]
+	(No symbol) [0x00007FF7264571CF]
+	(No symbol) [0x00007FF72647851C]
+	(No symbol) [0x00007FF726456F33]
+	(No symbol) [0x00007FF72642116F]
+	(No symbol) [0x00007FF7264222D1]
+	GetHandleVerifier [0x00007FF7268DC96D+3378253]
+	GetHandleVerifier [0x00007FF726928497+3688311]
+	GetHandleVerifier [0x00007FF72691D1CB+3642539]
+	GetHandleVerifier [0x00007FF72666A6B6+813462]
+	(No symbol) [0x00007FF72652AB5F]
+	(No symbol) [0x00007FF726526B74]
+	(No symbol) [0x00007FF726526D10]
+	(No symbol) [0x00007FF726515C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Khong co kieu cong viec việc chính
+Khòn co status nao thoa man mới tạo
+Quản lý tồn kho - Case: 10 - Lỗi khi lưu jobcard Quản lý tồn kho
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 353, in __finJobCard
+    __save(browser)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 52, in __save
+    save_btn.click()
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div _ngcontent-gjn-c102="" slot="end" class="btnHeader ng-star-inserted">...</div> is not clickable at point (876, 28). Other element would receive the click: <ion-modal class="md modal-default hydrated show-modal" id="ion-overlay-16" no-router="" tabindex="-1" style="z-index: 20016;">...</ion-modal>
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7265AB095+29557]
+	(No symbol) [0x00007FF72651FA50]
+	(No symbol) [0x00007FF7263DB56A]
+	(No symbol) [0x00007FF72643737E]
+	(No symbol) [0x00007FF726434DCC]
+	(No symbol) [0x00007FF726432288]
+	(No symbol) [0x00007FF72643149A]
+	(No symbol) [0x00007FF72642354E]
+	(No symbol) [0x00007FF72645718A]
+	(No symbol) [0x00007FF726422E86]
+	(No symbol) [0x00007FF7264573A0]
+	(No symbol) [0x00007FF72647851C]
+	(No symbol) [0x00007FF726456F33]
+	(No symbol) [0x00007FF72642116F]
+	(No symbol) [0x00007FF7264222D1]
+	GetHandleVerifier [0x00007FF7268DC96D+3378253]
+	GetHandleVerifier [0x00007FF726928497+3688311]
+	GetHandleVerifier [0x00007FF72691D1CB+3642539]
+	GetHandleVerifier [0x00007FF72666A6B6+813462]
+	(No symbol) [0x00007FF72652AB5F]
+	(No symbol) [0x00007FF726526B74]
+	(No symbol) [0x00007FF726526D10]
+	(No symbol) [0x00007FF726515C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Khong co workflow nao thoa man.
+Bảo trì máy móc thiết bị - Khong co nhan vien ten: nguyễn hữu đức
+Bảo trì máy móc thiết bị - Khong co nhan vien ten: Nguyễn Hữu Đức
+Bảo trì máy móc thiết bị - Khong co thoi han hoac khong co du lieu: 7.0
+Bảo trì máy móc thiết bị - Khong co don vi hoac khong co du lieu: Tháng
+Bảo trì máy móc thiết bị - Khong co dau muc ten Lập kế hoạch bảo trì hoac khong co du lieu
+Khong co workflow nao thoa man.
+Giám sát quy trình sản xuất - Khong co nhan vien ten: vũ văn hiếu
+Giám sát quy trình sản xuất - Khong co nhan vien ten: Vũ Văn Hiếu
+Giám sát quy trình sản xuất - Khong co thoi han hoac khong co du lieu: 2.0
+Giám sát quy trình sản xuất - Khong co don vi hoac khong co du lieu: Ngày
+Giám sát quy trình sản xuất - Khong co dau muc ten Kiểm tra chất lượng sản phẩm hoac khong co du lieu
+Khong co workflow nao thoa man.
+Phân tích hiệu suất sản xuất - Khong co nhan vien ten: trần thế vinh
+Phân tích hiệu suất sản xuất - Khong co nhan vien ten: Trần Thế Vinh
+Phân tích hiệu suất sản xuất - Khong co thoi han hoac khong co du lieu: 1.0
+Phân tích hiệu suất sản xuất - Khong co don vi hoac khong co du lieu: Quý 
+Phân tích hiệu suất sản xuất - Khong co dau muc ten Đánh giá năng suất lao động hoac khong co du lieu
+Quản lý dây chuyền sản xuất - Khong co nhan vien ten: lưu cảnh tùng
+Quản lý dây chuyền sản xuất - Khong co nhan vien ten: Lưu Cảnh Tùng
+Quản lý dây chuyền sản xuất - Khong co thoi han hoac khong co du lieu: 8.0
+Quản lý dây chuyền sản xuất - Khong co don vi hoac khong co du lieu: Ngày
+Quản lý dây chuyền sản xuất - Khong co dau muc ten Tối ưu hóa quy trình sản xuất hoac khong co du lieu
+Khong co workflow nao thoa man.
+Quản lý an toàn lao động - Khong co nhan vien ten: Phan Duy Dương
+Quản lý an toàn lao động - Khong co thoi han hoac khong co du lieu: 2.0
+Quản lý an toàn lao động - Khong co don vi hoac khong co du lieu: Tháng
+Quản lý an toàn lao động - Khong co dau muc ten Đào tạo nhân viên về an toàn hoac khong co du lieu
+Xây dựng chiến lược tiếp thị - Khong co don vi hoac khong co du lieu: Năm
+Xây dựng chiến lược tiếp thị - Khong co dau muc ten Phân tích các kênh tiếp thị hoac khong co du lieu
+Quản lý chiến dịch quảng cáo - Case: 17 - Không có bảng việc tên BETA 1 (REACTJS - NODEJS) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7265AB095+29557]
+	(No symbol) [0x00007FF72651FA50]
+	(No symbol) [0x00007FF7263DB56A]
+	(No symbol) [0x00007FF72642F695]
+	(No symbol) [0x00007FF72642F8EC]
+	(No symbol) [0x00007FF72647B777]
+	(No symbol) [0x00007FF7264571CF]
+	(No symbol) [0x00007FF72647851C]
+	(No symbol) [0x00007FF726456F33]
+	(No symbol) [0x00007FF72642116F]
+	(No symbol) [0x00007FF7264222D1]
+	GetHandleVerifier [0x00007FF7268DC96D+3378253]
+	GetHandleVerifier [0x00007FF726928497+3688311]
+	GetHandleVerifier [0x00007FF72691D1CB+3642539]
+	GetHandleVerifier [0x00007FF72666A6B6+813462]
+	(No symbol) [0x00007FF72652AB5F]
+	(No symbol) [0x00007FF726526B74]
+	(No symbol) [0x00007FF726526D10]
+	(No symbol) [0x00007FF726515C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Nghiên cứu thị trường - Khong co don vi hoac khong co du lieu: Năm
+Nghiên cứu thị trường - Khong co dau muc ten Phân tích xu hướng thị trường hoac khong co du lieu
+Khong co kieu cong viec tăng cường
+Khòn co status nao thoa man mới tạo
+Quản lý nội dung - Case: 19 - Lỗi khi lưu jobcard Quản lý nội dung
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 353, in __finJobCard
+    __save(browser)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 52, in __save
+    save_btn.click()
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div _ngcontent-njs-c102="" slot="end" class="btnHeader ng-star-inserted">...</div> is not clickable at point (876, 28). Other element would receive the click: <ion-modal class="md modal-default hydrated show-modal" id="ion-overlay-16" no-router="" tabindex="-1" style="z-index: 20016;">...</ion-modal>
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7265AB095+29557]
+	(No symbol) [0x00007FF72651FA50]
+	(No symbol) [0x00007FF7263DB56A]
+	(No symbol) [0x00007FF72643737E]
+	(No symbol) [0x00007FF726434DCC]
+	(No symbol) [0x00007FF726432288]
+	(No symbol) [0x00007FF72643149A]
+	(No symbol) [0x00007FF72642354E]
+	(No symbol) [0x00007FF72645718A]
+	(No symbol) [0x00007FF726422E86]
+	(No symbol) [0x00007FF7264573A0]
+	(No symbol) [0x00007FF72647851C]
+	(No symbol) [0x00007FF726456F33]
+	(No symbol) [0x00007FF72642116F]
+	(No symbol) [0x00007FF7264222D1]
+	GetHandleVerifier [0x00007FF7268DC96D+3378253]
+	GetHandleVerifier [0x00007FF726928497+3688311]
+	GetHandleVerifier [0x00007FF72691D1CB+3642539]
+	GetHandleVerifier [0x00007FF72666A6B6+813462]
+	(No symbol) [0x00007FF72652AB5F]
+	(No symbol) [0x00007FF726526B74]
+	(No symbol) [0x00007FF726526D10]
+	(No symbol) [0x00007FF726515C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Quản lý mối quan hệ khách hàng - Khong co don vi hoac khong co du lieu: Quý 
+Quản lý mối quan hệ khách hàng - Khong co dau muc ten Phân tích hành vi khách hàng hoac khong co du lieu
+Khong co workflow nao thoa man.
+Phân tích đối thủ cạnh tranh - Khong co dau muc ten Nghiên cứu sản phẩm của đối thủ hoac khong co du lieu
+Phân tích đối thủ cạnh tranh - Khong co don vi hoac khong co du lieu: Quý 
+Phân tích đối thủ cạnh tranh - Khong co dau muc ten Phân tích chiến lược giá hoac khong co du lieu
+Quản lý thương hiệu - Case: 22 - Không có bảng việc tên BETA 2 (REACTJS - NODEJS) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7265AB095+29557]
+	(No symbol) [0x00007FF72651FA50]
+	(No symbol) [0x00007FF7263DB56A]
+	(No symbol) [0x00007FF72642F695]
+	(No symbol) [0x00007FF72642F8EC]
+	(No symbol) [0x00007FF72647B777]
+	(No symbol) [0x00007FF7264571CF]
+	(No symbol) [0x00007FF72647851C]
+	(No symbol) [0x00007FF726456F33]
+	(No symbol) [0x00007FF72642116F]
+	(No symbol) [0x00007FF7264222D1]
+	GetHandleVerifier [0x00007FF7268DC96D+3378253]
+	GetHandleVerifier [0x00007FF726928497+3688311]
+	GetHandleVerifier [0x00007FF72691D1CB+3642539]
+	GetHandleVerifier [0x00007FF72666A6B6+813462]
+	(No symbol) [0x00007FF72652AB5F]
+	(No symbol) [0x00007FF726526B74]
+	(No symbol) [0x00007FF726526D10]
+	(No symbol) [0x00007FF726515C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Khong co workflow nao thoa man.
+Dự án xây dựng - Khong co nhan vien ten: Lý Hoài Lâm
+Dự án xây dựng - Khong co thoi han hoac khong co du lieu: 3.0
+Dự án xây dựng - Khong co don vi hoac khong co du lieu: Tháng
+Dự án xây dựng - Khong co dau muc ten Chuẩn bị Dự án hoac khong co du lieu
+Khong co workflow nao thoa man.
+Hợp đồng sản xuất với đối tác nước ngoài - Khong co dau muc ten Tạo hợp đồng hoac khong co du lieu
+Hợp đồng sản xuất với đối tác nước ngoài - Khong co dau muc ten None hoac khong co du lieu
+Khong co workflow nao thoa man.
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co nhanh nao thoa man trụ sở chính
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co phong ban nhom nao thoa man ['ban giám đốc']
+Hợp đồng sản xuất theo đơn đặt hàng - Error in __selectStaff. Retry 1/1: Message: element click intercepted: Element <button type="button" class="ionic-selectable-cover"></button> is not clickable at point (479, 393). Other element would receive the click: <ion-label class="ng-star-inserted sc-ion-label-md-h sc-ion-label-md-s md hydrated">...</ion-label>
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7265AB095+29557]
+	(No symbol) [0x00007FF72651FA50]
+	(No symbol) [0x00007FF7263DB56A]
+	(No symbol) [0x00007FF72643737E]
+	(No symbol) [0x00007FF726434DCC]
+	(No symbol) [0x00007FF726432288]
+	(No symbol) [0x00007FF72643149A]
+	(No symbol) [0x00007FF72642354E]
+	(No symbol) [0x00007FF72645718A]
+	(No symbol) [0x00007FF726422E86]
+	(No symbol) [0x00007FF7264573A0]
+	(No symbol) [0x00007FF72647851C]
+	(No symbol) [0x00007FF726456F33]
+	(No symbol) [0x00007FF72642116F]
+	(No symbol) [0x00007FF7264222D1]
+	GetHandleVerifier [0x00007FF7268DC96D+3378253]
+	GetHandleVerifier [0x00007FF726928497+3688311]
+	GetHandleVerifier [0x00007FF72691D1CB+3642539]
+	GetHandleVerifier [0x00007FF72666A6B6+813462]
+	(No symbol) [0x00007FF72652AB5F]
+	(No symbol) [0x00007FF726526B74]
+	(No symbol) [0x00007FF726526D10]
+	(No symbol) [0x00007FF726515C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng sản xuất theo đơn đặt hàng - Error in __selectStaff. Retry 2/1: Message: element click intercepted: Element <button type="button" class="ionic-selectable-cover"></button> is not clickable at point (479, 393). Other element would receive the click: <ion-label class="ng-star-inserted sc-ion-label-md-h sc-ion-label-md-s md hydrated">...</ion-label>
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7265AB095+29557]
+	(No symbol) [0x00007FF72651FA50]
+	(No symbol) [0x00007FF7263DB56A]
+	(No symbol) [0x00007FF72643737E]
+	(No symbol) [0x00007FF726434DCC]
+	(No symbol) [0x00007FF726432288]
+	(No symbol) [0x00007FF72643149A]
+	(No symbol) [0x00007FF72642354E]
+	(No symbol) [0x00007FF72645718A]
+	(No symbol) [0x00007FF726422E86]
+	(No symbol) [0x00007FF7264573A0]
+	(No symbol) [0x00007FF72647851C]
+	(No symbol) [0x00007FF726456F33]
+	(No symbol) [0x00007FF72642116F]
+	(No symbol) [0x00007FF7264222D1]
+	GetHandleVerifier [0x00007FF7268DC96D+3378253]
+	GetHandleVerifier [0x00007FF726928497+3688311]
+	GetHandleVerifier [0x00007FF72691D1CB+3642539]
+	GetHandleVerifier [0x00007FF72666A6B6+813462]
+	(No symbol) [0x00007FF72652AB5F]
+	(No symbol) [0x00007FF726526B74]
+	(No symbol) [0x00007FF726526D10]
+	(No symbol) [0x00007FF726515C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Khong co workflow nao thoa man.
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co nhan vien ten: hồ gia bảo bí thư
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co nhan vien ten: Hồ Gia Bảo bí thư
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co thoi han hoac khong co du lieu: 6.0
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co don vi hoac khong co du lieu: Giờ
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co dau muc ten Tạo hợp đồng hoac khong co du lieu
+Hợp đồng sản xuất và bảo trì - Khong co nhan vien ten: Phạm Hoàng Doanh
+Hợp đồng sản xuất và bảo trì - Khong co thoi han hoac khong co du lieu: 5.0
+Hợp đồng sản xuất và bảo trì - Khong co don vi hoac khong co du lieu: Quý 
+Hợp đồng sản xuất và bảo trì - Khong co dau muc ten Duyệt hợp đồng hoac khong co du lieu
+Nghiên cứu phát triển sản phẩm mới - Case: 27 - Không có bảng việc tên OMEGA (JAVA SPRING) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7265AB095+29557]
+	(No symbol) [0x00007FF72651FA50]
+	(No symbol) [0x00007FF7263DB56A]
+	(No symbol) [0x00007FF72642F695]
+	(No symbol) [0x00007FF72642F8EC]
+	(No symbol) [0x00007FF72647B777]
+	(No symbol) [0x00007FF7264571CF]
+	(No symbol) [0x00007FF72647851C]
+	(No symbol) [0x00007FF726456F33]
+	(No symbol) [0x00007FF72642116F]
+	(No symbol) [0x00007FF7264222D1]
+	GetHandleVerifier [0x00007FF7268DC96D+3378253]
+	GetHandleVerifier [0x00007FF726928497+3688311]
+	GetHandleVerifier [0x00007FF72691D1CB+3642539]
+	GetHandleVerifier [0x00007FF72666A6B6+813462]
+	(No symbol) [0x00007FF72652AB5F]
+	(No symbol) [0x00007FF726526B74]
+	(No symbol) [0x00007FF726526D10]
+	(No symbol) [0x00007FF726515C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng cung cấp dịch vụ bảo trì hệ thống - Case: 28 - Không có bảng việc tên DELTA (PHP-LARAVEL) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7265AB095+29557]
+	(No symbol) [0x00007FF72651FA50]
+	(No symbol) [0x00007FF7263DB56A]
+	(No symbol) [0x00007FF72642F695]
+	(No symbol) [0x00007FF72642F8EC]
+	(No symbol) [0x00007FF72647B777]
+	(No symbol) [0x00007FF7264571CF]
+	(No symbol) [0x00007FF72647851C]
+	(No symbol) [0x00007FF726456F33]
+	(No symbol) [0x00007FF72642116F]
+	(No symbol) [0x00007FF7264222D1]
+	GetHandleVerifier [0x00007FF7268DC96D+3378253]
+	GetHandleVerifier [0x00007FF726928497+3688311]
+	GetHandleVerifier [0x00007FF72691D1CB+3642539]
+	GetHandleVerifier [0x00007FF72666A6B6+813462]
+	(No symbol) [0x00007FF72652AB5F]
+	(No symbol) [0x00007FF726526B74]
+	(No symbol) [0x00007FF726526D10]
+	(No symbol) [0x00007FF726515C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Thiết kế và triển khai giao diện người dùng - Case: 29 - Không có bảng việc tên ALPHA (REACTJS) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7265AB095+29557]
+	(No symbol) [0x00007FF72651FA50]
+	(No symbol) [0x00007FF7263DB56A]
+	(No symbol) [0x00007FF72642F695]
+	(No symbol) [0x00007FF72642F8EC]
+	(No symbol) [0x00007FF72647B777]
+	(No symbol) [0x00007FF7264571CF]
+	(No symbol) [0x00007FF72647851C]
+	(No symbol) [0x00007FF726456F33]
+	(No symbol) [0x00007FF72642116F]
+	(No symbol) [0x00007FF7264222D1]
+	GetHandleVerifier [0x00007FF7268DC96D+3378253]
+	GetHandleVerifier [0x00007FF726928497+3688311]
+	GetHandleVerifier [0x00007FF72691D1CB+3642539]
+	GetHandleVerifier [0x00007FF72666A6B6+813462]
+	(No symbol) [0x00007FF72652AB5F]
+	(No symbol) [0x00007FF726526B74]
+	(No symbol) [0x00007FF726526D10]
+	(No symbol) [0x00007FF726515C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Khong co workflow nao thoa man.
+Phát triển API cho ứng dụng mới - Error in __selectBranch. Retry 1/1: cannot access local variable 'branch' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectBranch. Retry 2/1: cannot access local variable 'branch' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectDepartment. Retry 1/1: cannot access local variable 'list_departments' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectDepartment. Retry 2/1: cannot access local variable 'list_departments' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectStaff. Retry 1/1: list index out of range
+Phát triển API cho ứng dụng mới - Error in __selectStaff. Retry 2/1: list index out of range
+Khong co workflow nao thoa man.
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co nhan vien ten: hồ gia bảo bí thư
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co nhan vien ten: Hồ Gia Bảo bí thư
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co thoi han hoac khong co du lieu: 6.0
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co don vi hoac khong co du lieu: Giờ
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co dau muc ten Tạo hợp đồng hoac khong co du lieu
+Hợp đồng sản xuất và bảo trì - Khong co nhan vien ten: Phạm Hoàng Doanh
+Hợp đồng sản xuất và bảo trì - Khong co thoi han hoac khong co du lieu: 5.0
+Hợp đồng sản xuất và bảo trì - Khong co don vi hoac khong co du lieu: Quý 
+Hợp đồng sản xuất và bảo trì - Khong co dau muc ten Duyệt hợp đồng hoac khong co du lieu
+Nghiên cứu phát triển sản phẩm mới - Case: 27 - Không có bảng việc tên OMEGA (JAVA SPRING) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7265AB095+29557]
+	(No symbol) [0x00007FF72651FA50]
+	(No symbol) [0x00007FF7263DB56A]
+	(No symbol) [0x00007FF72642F695]
+	(No symbol) [0x00007FF72642F8EC]
+	(No symbol) [0x00007FF72647B777]
+	(No symbol) [0x00007FF7264571CF]
+	(No symbol) [0x00007FF72647851C]
+	(No symbol) [0x00007FF726456F33]
+	(No symbol) [0x00007FF72642116F]
+	(No symbol) [0x00007FF7264222D1]
+	GetHandleVerifier [0x00007FF7268DC96D+3378253]
+	GetHandleVerifier [0x00007FF726928497+3688311]
+	GetHandleVerifier [0x00007FF72691D1CB+3642539]
+	GetHandleVerifier [0x00007FF72666A6B6+813462]
+	(No symbol) [0x00007FF72652AB5F]
+	(No symbol) [0x00007FF726526B74]
+	(No symbol) [0x00007FF726526D10]
+	(No symbol) [0x00007FF726515C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng cung cấp dịch vụ bảo trì hệ thống - Case: 28 - Không có bảng việc tên DELTA (PHP-LARAVEL) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7265AB095+29557]
+	(No symbol) [0x00007FF72651FA50]
+	(No symbol) [0x00007FF7263DB56A]
+	(No symbol) [0x00007FF72642F695]
+	(No symbol) [0x00007FF72642F8EC]
+	(No symbol) [0x00007FF72647B777]
+	(No symbol) [0x00007FF7264571CF]
+	(No symbol) [0x00007FF72647851C]
+	(No symbol) [0x00007FF726456F33]
+	(No symbol) [0x00007FF72642116F]
+	(No symbol) [0x00007FF7264222D1]
+	GetHandleVerifier [0x00007FF7268DC96D+3378253]
+	GetHandleVerifier [0x00007FF726928497+3688311]
+	GetHandleVerifier [0x00007FF72691D1CB+3642539]
+	GetHandleVerifier [0x00007FF72666A6B6+813462]
+	(No symbol) [0x00007FF72652AB5F]
+	(No symbol) [0x00007FF726526B74]
+	(No symbol) [0x00007FF726526D10]
+	(No symbol) [0x00007FF726515C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Thiết kế và triển khai giao diện người dùng - Case: 29 - Không có bảng việc tên ALPHA (REACTJS) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7265AB095+29557]
+	(No symbol) [0x00007FF72651FA50]
+	(No symbol) [0x00007FF7263DB56A]
+	(No symbol) [0x00007FF72642F695]
+	(No symbol) [0x00007FF72642F8EC]
+	(No symbol) [0x00007FF72647B777]
+	(No symbol) [0x00007FF7264571CF]
+	(No symbol) [0x00007FF72647851C]
+	(No symbol) [0x00007FF726456F33]
+	(No symbol) [0x00007FF72642116F]
+	(No symbol) [0x00007FF7264222D1]
+	GetHandleVerifier [0x00007FF7268DC96D+3378253]
+	GetHandleVerifier [0x00007FF726928497+3688311]
+	GetHandleVerifier [0x00007FF72691D1CB+3642539]
+	GetHandleVerifier [0x00007FF72666A6B6+813462]
+	(No symbol) [0x00007FF72652AB5F]
+	(No symbol) [0x00007FF726526B74]
+	(No symbol) [0x00007FF726526D10]
+	(No symbol) [0x00007FF726515C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Khong co workflow nao thoa man.
+Phát triển API cho ứng dụng mới - Error in __selectBranch. Retry 1/1: cannot access local variable 'branch' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectBranch. Retry 2/1: cannot access local variable 'branch' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectDepartment. Retry 1/1: cannot access local variable 'list_departments' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectDepartment. Retry 2/1: cannot access local variable 'list_departments' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectStaff. Retry 1/1: list index out of range
+Phát triển API cho ứng dụng mới - Error in __selectStaff. Retry 2/1: list index out of range
+Phát triển API cho ứng dụng mới - Case: 30 - Lỗi khi chọn ngày kết thúc cho jobcard Phát triển API cho ứng dụng mới
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 292, in __finJobCard
+    __selectStartOrEndDate(browser, start_date_compile, "start")
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 141, in __selectStartOrEndDate
+    ion_button_ele[1].click()
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7265AB095+29557]
+	(No symbol) [0x00007FF72651FA50]
+	(No symbol) [0x00007FF7263DB399]
+	(No symbol) [0x00007FF726430B0F]
+	(No symbol) [0x00007FF72642354E]
+	(No symbol) [0x00007FF72645718A]
+	(No symbol) [0x00007FF726422E86]
+	(No symbol) [0x00007FF7264573A0]
+	(No symbol) [0x00007FF72647851C]
+	(No symbol) [0x00007FF726456F33]
+	(No symbol) [0x00007FF72642116F]
+	(No symbol) [0x00007FF7264222D1]
+	GetHandleVerifier [0x00007FF7268DC96D+3378253]
+	GetHandleVerifier [0x00007FF726928497+3688311]
+	GetHandleVerifier [0x00007FF72691D1CB+3642539]
+	GetHandleVerifier [0x00007FF72666A6B6+813462]
+	(No symbol) [0x00007FF72652AB5F]
+	(No symbol) [0x00007FF726526B74]
+	(No symbol) [0x00007FF726526D10]
+	(No symbol) [0x00007FF726515C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng tích hợp hệ thống ERP - Case: 31 - Không có bảng việc tên BETA (REACTJS - NODEJS) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 238, in __select_tabjob
+    list_selection_list_tabjob = group_selection_list_tabjob.find_elements(By.TAG_NAME,'ion-label')
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'find_elements'
+Khong co workflow nao thoa man.
+Phát triển API cho ứng dụng mới - Error in __selectBranch. Retry 1/1: cannot access local variable 'branch' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectBranch. Retry 2/1: cannot access local variable 'branch' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectDepartment. Retry 1/1: cannot access local variable 'list_departments' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectDepartment. Retry 2/1: cannot access local variable 'list_departments' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectStaff. Retry 1/1: list index out of range
+Phát triển API cho ứng dụng mới - Error in __selectStaff. Retry 2/1: list index out of range
+Khong co workflow nao thoa man.
+Phát triển API cho ứng dụng mới - Error in __selectBranch. Retry 1/1: cannot access local variable 'branch' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectBranch. Retry 2/1: cannot access local variable 'branch' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectDepartment. Retry 1/1: cannot access local variable 'list_departments' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectDepartment. Retry 2/1: cannot access local variable 'list_departments' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectStaff. Retry 1/1: list index out of range
+Phát triển API cho ứng dụng mới - Error in __selectStaff. Retry 2/1: list index out of range
+Hợp đồng sản xuất và lắp ráp - Khong co nhan vien ten: nguyễn quang huy
+Hợp đồng sản xuất và lắp ráp - Khong co nhan vien ten: Nguyễn Quang Huy
+Hợp đồng sản xuất và lắp ráp - Khong co thoi han hoac khong co du lieu: 10.0
+Hợp đồng sản xuất và lắp ráp - Khong co don vi hoac khong co du lieu: Giờ
+Hợp đồng sản xuất và lắp ráp - Khong co dau muc ten Tạo hợp đồng hoac khong co du lieu
+Khong co workflow nao thoa man.
+Phát triển API cho ứng dụng mới - Error in __selectBranch. Retry 1/1: cannot access local variable 'branch' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectBranch. Retry 2/1: cannot access local variable 'branch' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectDepartment. Retry 1/1: cannot access local variable 'list_departments' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectDepartment. Retry 2/1: cannot access local variable 'list_departments' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectStaff. Retry 1/1: list index out of range
+Phát triển API cho ứng dụng mới - Error in __selectStaff. Retry 2/1: list index out of range
+Khong co workflow nao thoa man.
+Phát triển API cho ứng dụng mới - Error in __selectBranch. Retry 1/1: cannot access local variable 'branch' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectBranch. Retry 2/1: cannot access local variable 'branch' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectDepartment. Retry 1/1: cannot access local variable 'list_departments' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectDepartment. Retry 2/1: cannot access local variable 'list_departments' where it is not associated with a value
+Phát triển API cho ứng dụng mới - Error in __selectStaff. Retry 1/1: list index out of range
+Phát triển API cho ứng dụng mới - Error in __selectStaff. Retry 2/1: list index out of range
+Khong co workflow nao thoa man.

@@ -104,6 +104,7 @@ def __insert_task_name(browser, task):
         post_btn = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/div/ion-header/ion-toolbar/ion-buttons[2]/ion-button')
         post_btn.click()
         time.sleep(0.5)
+        logger.info(f"Thêm đầu mục {task.name} thành công cho '{task.card_job}'")
         __findToAddStaff(browser, task)
     except:
         logger.warning(f"{task.card_job} - Khong co dau muc ten {task.name} hoac khong co du lieu")

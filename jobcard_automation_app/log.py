@@ -21,19 +21,19 @@ class ErrorFilter(logging.Filter):
         return record.levelno == logging.ERROR
 
 # Tạo handler cho success log
-success_handler = logging.FileHandler('success.log')
+success_handler = logging.FileHandler('success.log', encoding='utf-8')
 success_handler.setLevel(logging.INFO)  # Chỉ ghi thông tin thành công
 success_handler.setFormatter(formatter)
 success_handler.addFilter(InfoFilter())  # Chỉ ghi INFO
 
 # Tạo handler cho fail log
-fail_handler = logging.FileHandler('fail.log')
+fail_handler = logging.FileHandler('fail.log', encoding='utf-8')
 fail_handler.setLevel(logging.WARNING)  # Chỉ ghi cảnh báo
 fail_handler.setFormatter(formatter)
 fail_handler.addFilter(WarningFilter())  # Chỉ ghi WARNING
 
 # Tạo handler cho error log
-error_handler = logging.FileHandler('error.log')
+error_handler = logging.FileHandler('error.log', encoding='utf-8')
 error_handler.setLevel(logging.ERROR)  # Chỉ ghi lỗi
 error_handler.setFormatter(formatter)
 error_handler.addFilter(ErrorFilter())  # Chỉ ghi ERROR
