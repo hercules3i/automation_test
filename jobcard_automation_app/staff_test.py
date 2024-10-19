@@ -20,6 +20,7 @@ sleeping_time = 0.25
 def __selectStaff(browser, list_staffs, jobcard_name):
     list_staffs = [staff for staff in list_staffs if staff.card_job.strip().lower() == jobcard_name.strip().lower()]
     list_staffs = list_staffs[0].list_staffs
+
     for i in range(len(list_staffs)):
         list_staffs[i] = list_staffs[i].strip().lower()
     print(str(list_staffs))
@@ -163,7 +164,7 @@ def retry(func, browser, list_staffs, jobCard_name, max_retries=1):
             break
         except Exception as e:
             retries += 1
-            logger.warning(f"{jobCard_name} - Error in {func.__name__}. Retry {retries}/{max_retries}: {e}")
+            logger.error(f"{jobCard_name} - Error in {func.__name__}. Retry {retries}/{max_retries}: {e}")
             if retries > max_retries:
                 logger.error(f"{jobCard_name} - Failed after {retries} attempts in {func.__name__}", exc_info=True)
                 break
@@ -182,14 +183,14 @@ def __findToStaff(browser, list_staffs, jobCard_name, list_tasks):
         add_staff_btn = add_staff_btn_shadow.find_element(By.CSS_SELECTOR, '[class="icon-inner"]')
         add_staff_btn.click()
         time.sleep(1)
-        
+        if len(list_staffs) != 0:
         # Retry these methods up to 1 more time in case of error
-        retry(__selectBranch, browser, list_staffs, jobCard_name, max_retries=1)
-        time.sleep(sleeping_time)
-        retry(__selectDepartment, browser, list_staffs, jobCard_name, max_retries=1)
-        time.sleep(sleeping_time)
-        retry(__selectStaff, browser, list_staffs, jobCard_name, max_retries=1)
-        time.sleep(sleeping_time)
+            retry(__selectBranch, browser, list_staffs, jobCard_name, max_retries=1)
+            time.sleep(sleeping_time)
+            retry(__selectDepartment, browser, list_staffs, jobCard_name, max_retries=1)
+            time.sleep(sleeping_time)
+            retry(__selectStaff, browser, list_staffs, jobCard_name, max_retries=1)
+            time.sleep(sleeping_time)
         
         __findToTasks(browser, list_tasks, jobCard_name)
     # except Exception as e:

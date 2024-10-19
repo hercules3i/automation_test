@@ -382,7 +382,14 @@ def __finJobCard(browser,list_jobcards,list_staffs,list_tasks):
             time.sleep(sleeping_time)
 
             try:
+                print(len(list_staffs))
+                staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+                if len(staffs) == 0:
+                    browser.get("https://ionic.3i.com.vn/time-keeping")
+                    time.sleep(1)
+                    continue
                 __findToStaff(browser, list_staffs, list_jobcards[i].name, list_tasks)
+       
             except Exception as e:
                 logger.warning(f"{list_jobcards[i].name} - Case: {count_case+1} - Lỗi khi tìm nhân viên cho jobcard {list_jobcards[i].name}", exc_info=True)
                 browser.get("https://ionic.3i.com.vn/time-keeping")
