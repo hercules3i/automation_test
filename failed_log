@@ -1,0 +1,24 @@
+2024-11-05 15:57:40.135682 - Công đoạn kéo - Case: 2 - None - Ca 3: 18:00 - 22:00 - Failed: Số lượng NG của Thép dây 10B34(Sau kéo) - 1.2.23.010 lớn hơn số lượng nhập
+2024-11-05 15:58:06.684241 - Công đoạn kéo - Case: 3 - [WORKORDER_T9.2024_04] Lệnh sản xuất 26/9 L1 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2024-11-05 15:58:33.093100 - Công đoạn kéo - Case: 4 - [WORKORDER_T9.2024_04] Lệnh sản xuất 26/9 L1 - Ca 1: 08:00 - 12:00 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2024-11-05 15:59:03.127566 - Công đoạn kéo - Case: 5 - [WORKORDER_T9.2024_02] Lệnh sản xuất 25/9 L1 - Ca 2: 13:30 - 17:30 - Failed: Not found unit
+2024-11-05 15:59:30.980907 - Công đoạn kéo - Case: 6 - [WORKORDER_T9.2024_02] Lệnh sản xuất 25/9 L1 - Ca 1: 08:00 - 12:00 - Failed: Not found unit
+2024-11-05 16:00:20.248264 - Công đoạn dập và ren - Case: 2 - None - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của H B 961 10.9 PlainM22x1.5x85 lớn hơn số lượng nhập
+2024-11-05 16:01:07.572677 - Công đoạn dập và ren - Case: 5 - [WORKORDER_T9.2024_12] Lệnh sản xuất 28/9 L2 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2024-11-05 16:01:33.551309 - Công đoạn dập và ren - Case: 6 - [WORKORDER_T9.2024_12] Lệnh sản xuất 28/9 L2 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2024-11-05 16:01:59.514864 - Công đoạn dập và ren - Case: 7 - [WORKORDER_T9.2024_04] Lệnh sản xuất 26/9 L1 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2024-11-05 16:02:24.682910 - Công đoạn dập và ren - Case: 8 - [WORKORDER_T9.2024_04] Lệnh sản xuất 26/9 L1 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2024-11-05 16:02:49.085034 - Nhiệt - Case: 1 - None - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của H B 961 10.9 PlainM20x1.5x100 lớn hơn số lượng nhập
+2024-11-05 16:03:13.365579 - Nhiệt - Case: 2 - None - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của H B 961 10.9 PlainM20x1.5x100 lớn hơn số lượng nhập
+2024-11-05 16:03:39.178159 - Nhiệt - Case: 3 - [WORKORDER_T9.2024_11] Lệnh sản xuất 2809 L1 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2024-11-05 16:04:05.677738 - Nhiệt - Case: 4 - [WORKORDER_T9.2024_11] Lệnh sản xuất 2809 L1 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2024-11-05 16:04:31.166816 - Nhiệt - Case: 5 - [WORKORDER_T9.2024_12] Lệnh sản xuất 28/9 L2 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2024-11-05 16:04:56.864208 - Nhiệt - Case: 6 - [WORKORDER_T9.2024_12] Lệnh sản xuất 28/9 L2 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2024-11-05 16:07:34.172804 - Xi mạ - Case: 3 - [WORKORDER_T9.2024_12] Lệnh sản xuất 28/9 L2 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2024-11-05 16:08:52.089783 - Xi mạ - Case: 4 - [WORKORDER_T9.2024_12] Lệnh sản xuất 28/9 L2 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2024-11-05 16:09:19.140159 - Xi mạ - Case: 5 - [WORKORDER_T9.2024_11] Lệnh sản xuất 2809 L1 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2024-11-05 16:09:46.064151 - Xi mạ - Case: 6 - [WORKORDER_T9.2024_11] Lệnh sản xuất 2809 L1 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2024-11-05 16:10:11.117389 - Đóng gói - Case: 1 - None - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của H B 961 10.9 PlainM20x1.5x50 lớn hơn số lượng nhập
+2024-11-05 16:10:35.732946 - Đóng gói - Case: 2 - None - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của H B 961 10.9 PlainM20x1.5x50 lớn hơn số lượng nhập
+2024-11-05 16:11:14.792943 - Đóng gói - Case: 3 - [WORKORDER_T9.2024_12] Lệnh sản xuất 28/9 L2 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2024-11-05 16:11:54.116070 - Đóng gói - Case: 4 - [WORKORDER_T9.2024_12] Lệnh sản xuất 28/9 L2 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập

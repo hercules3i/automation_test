@@ -2,7 +2,7 @@ import openpyxl
 from JobcardClass import TabJob,CardJob,Staff,Task
 import os
 from father import JobCardSimpleData
-work_book = openpyxl.load_workbook(os.path.join("data","data thẻ việc.xlsx"))
+work_book = openpyxl.load_workbook(os.path.join("data","data thẻ việc (2).xlsx"))
 # print(work_book)
 # work_book = openpyxl.load_workbook(os.path.join("Downloads","automation_test-main (1)","data","data thẻ việc.xlsx"))
 list_sheets = ["Bảng việc ","Thêm thẻ việc","Thêm nhân sự ","Thêm đầu mục"]
@@ -66,8 +66,11 @@ def create_cardjob_object(sheet,jobcard):
 
 def create_staff_object(sheet, jobcard):
     max_row = sheet.max_row
+    old_jobcard_name = ""
     for row in range(3, max_row + 1):
         card_job = sheet.cell(row, 2).value
+        if card_job and card_job != None:
+            old_jobcard_name = card_job
         branch_agency = sheet.cell(row, 3).value
         department_group = sheet.cell(row, 4).value
         try:
@@ -77,11 +80,11 @@ def create_staff_object(sheet, jobcard):
         staff_name = sheet.cell(row, 5).value
         try:
             list_staffs = staff_name.split(",")
-            new_staff = Staff(card_job, branch_agency, department_group, list_staffs)
+            new_staff = Staff(old_jobcard_name, branch_agency, department_group, list_staffs)
             jobcard.list_staffs.append(new_staff)
         except:
             print("Chi co mot nhan vien")
-            new_staff = Staff(card_job, branch_agency, department_group, list(staff_name))
+            new_staff = Staff(old_jobcard_name, branch_agency, department_group, list(staff_name))
             jobcard.list_staffs.append(new_staff)
     return jobcard.list_staffs
 

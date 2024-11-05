@@ -1,0 +1,766 @@
+Khong co workflow nao thoa man.
+Phát triển API cho ứng dụng mới - Case: 30 - Lỗi khi tìm nhân viên cho jobcard Phát triển API cho ứng dụng mới
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 386, in __finJobCard
+    staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+                                                                                    ^^^^^^^^^^^^
+NameError: name 'jobcard_name' is not defined
+Khong co workflow nao thoa man.
+Hợp đồng tích hợp hệ thống ERP - Case: 31 - Lỗi khi tìm nhân viên cho jobcard Hợp đồng tích hợp hệ thống ERP
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 386, in __finJobCard
+    staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+                                                                                    ^^^^^^^^^^^^
+NameError: name 'jobcard_name' is not defined
+Nâng cấp phần mềm quản lý kho - Case: 32 - Không có bảng việc tên GAMMA (PYTHON - DJANGO) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF66493F695]
+	(No symbol) [0x00007FF66493F8EC]
+	(No symbol) [0x00007FF66498B777]
+	(No symbol) [0x00007FF6649671CF]
+	(No symbol) [0x00007FF66498851C]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Xây dựng hệ thống an ninh mạng - Case: 33 - Không có bảng việc tên THETA (C# .NET) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF66493F695]
+	(No symbol) [0x00007FF66493F8EC]
+	(No symbol) [0x00007FF66498B777]
+	(No symbol) [0x00007FF6649671CF]
+	(No symbol) [0x00007FF66498851C]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng bảo trì định kỳ - Case: 34 - Không có bảng việc tên DELTA (PHP - LARAVEL) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF66493F695]
+	(No symbol) [0x00007FF66493F8EC]
+	(No symbol) [0x00007FF66498B777]
+	(No symbol) [0x00007FF6649671CF]
+	(No symbol) [0x00007FF66498851C]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Khong co kieu cong viec việc chính
+Khòn co status nao thoa man mới tạo
+Dự án triển khai hệ thống quản lý khách hàng (CRM) - Case: 35 - Lỗi khi lưu jobcard Dự án triển khai hệ thống quản lý khách hàng (CRM)
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 353, in __finJobCard
+    __save(browser)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 52, in __save
+    save_btn.click()
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div _ngcontent-bik-c102="" slot="end" class="btnHeader ng-star-inserted">...</div> is not clickable at point (876, 28). Other element would receive the click: <ion-modal class="md modal-default hydrated show-modal" id="ion-overlay-16" no-router="" tabindex="-1" style="z-index: 20016;">...</ion-modal>
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF66494737E]
+	(No symbol) [0x00007FF664944DCC]
+	(No symbol) [0x00007FF664942288]
+	(No symbol) [0x00007FF66494149A]
+	(No symbol) [0x00007FF66493354E]
+	(No symbol) [0x00007FF66496718A]
+	(No symbol) [0x00007FF664932E86]
+	(No symbol) [0x00007FF6649673A0]
+	(No symbol) [0x00007FF66498851C]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Khong co workflow nao thoa man.
+Hợp đồng cung cấp dịch vụ dữ liệu - Case: 36 - Lỗi khi tìm nhân viên cho jobcard Hợp đồng cung cấp dịch vụ dữ liệu
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 386, in __finJobCard
+    staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+                                                                                    ^^^^^^^^^^^^
+NameError: name 'jobcard_name' is not defined
+Phát triển API cho ứng dụng mới - Case: 30 - Lỗi khi chọn ngày kết thúc cho jobcard Phát triển API cho ứng dụng mới
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 292, in __finJobCard
+    __selectStartOrEndDate(browser, start_date_compile, "start")
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 194, in __selectStartOrEndDate
+    if date['year'] == element.text:
+                       ^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 90, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF6648F213E]
+	(No symbol) [0x00007FF6648F44B7]
+	(No symbol) [0x00007FF6648F4570]
+	(No symbol) [0x00007FF66493942B]
+	(No symbol) [0x00007FF66496718A]
+	(No symbol) [0x00007FF664932E86]
+	(No symbol) [0x00007FF6649673A0]
+	(No symbol) [0x00007FF66498851C]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng tích hợp hệ thống ERP - Case: 31 - Không có bảng việc tên BETA (REACTJS - NODEJS) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 208, in __select_tabjob
+    tabjob_selection_ele = browser.find_element(By.XPATH,'//*[@id="main-content"]/app-create-card-job/ion-content/div/div[1]/ion-item/ionic-selectable/div/button')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF6648BFCC5]
+	(No symbol) [0x00007FF66496EE07]
+	(No symbol) [0x00007FF664987E21]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Khong co workflow nao thoa man.
+Phát triển API cho ứng dụng mới - Case: 30 - Lỗi khi tìm nhân viên cho jobcard Phát triển API cho ứng dụng mới
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 386, in __finJobCard
+    staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+                                                                                    ^^^^^^^^^^^^
+NameError: name 'jobcard_name' is not defined
+Khong co workflow nao thoa man.
+Hợp đồng tích hợp hệ thống ERP - Case: 31 - Lỗi khi tìm nhân viên cho jobcard Hợp đồng tích hợp hệ thống ERP
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 386, in __finJobCard
+    staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+                                                                                    ^^^^^^^^^^^^
+NameError: name 'jobcard_name' is not defined
+Nâng cấp phần mềm quản lý kho - Case: 32 - Không có bảng việc tên GAMMA (PYTHON - DJANGO) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D744B095+29557]
+	(No symbol) [0x00007FF7D73BFA50]
+	(No symbol) [0x00007FF7D727B56A]
+	(No symbol) [0x00007FF7D72CF695]
+	(No symbol) [0x00007FF7D72CF8EC]
+	(No symbol) [0x00007FF7D731B777]
+	(No symbol) [0x00007FF7D72F71CF]
+	(No symbol) [0x00007FF7D731851C]
+	(No symbol) [0x00007FF7D72F6F33]
+	(No symbol) [0x00007FF7D72C116F]
+	(No symbol) [0x00007FF7D72C22D1]
+	GetHandleVerifier [0x00007FF7D777C96D+3378253]
+	GetHandleVerifier [0x00007FF7D77C8497+3688311]
+	GetHandleVerifier [0x00007FF7D77BD1CB+3642539]
+	GetHandleVerifier [0x00007FF7D750A6B6+813462]
+	(No symbol) [0x00007FF7D73CAB5F]
+	(No symbol) [0x00007FF7D73C6B74]
+	(No symbol) [0x00007FF7D73C6D10]
+	(No symbol) [0x00007FF7D73B5C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Xây dựng hệ thống an ninh mạng - Case: 33 - Không có bảng việc tên THETA (C# .NET) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D744B095+29557]
+	(No symbol) [0x00007FF7D73BFA50]
+	(No symbol) [0x00007FF7D727B56A]
+	(No symbol) [0x00007FF7D72CF695]
+	(No symbol) [0x00007FF7D72CF8EC]
+	(No symbol) [0x00007FF7D731B777]
+	(No symbol) [0x00007FF7D72F71CF]
+	(No symbol) [0x00007FF7D731851C]
+	(No symbol) [0x00007FF7D72F6F33]
+	(No symbol) [0x00007FF7D72C116F]
+	(No symbol) [0x00007FF7D72C22D1]
+	GetHandleVerifier [0x00007FF7D777C96D+3378253]
+	GetHandleVerifier [0x00007FF7D77C8497+3688311]
+	GetHandleVerifier [0x00007FF7D77BD1CB+3642539]
+	GetHandleVerifier [0x00007FF7D750A6B6+813462]
+	(No symbol) [0x00007FF7D73CAB5F]
+	(No symbol) [0x00007FF7D73C6B74]
+	(No symbol) [0x00007FF7D73C6D10]
+	(No symbol) [0x00007FF7D73B5C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng bảo trì định kỳ - Case: 34 - Không có bảng việc tên DELTA (PHP - LARAVEL) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D744B095+29557]
+	(No symbol) [0x00007FF7D73BFA50]
+	(No symbol) [0x00007FF7D727B56A]
+	(No symbol) [0x00007FF7D72CF695]
+	(No symbol) [0x00007FF7D72CF8EC]
+	(No symbol) [0x00007FF7D731B777]
+	(No symbol) [0x00007FF7D72F71CF]
+	(No symbol) [0x00007FF7D731851C]
+	(No symbol) [0x00007FF7D72F6F33]
+	(No symbol) [0x00007FF7D72C116F]
+	(No symbol) [0x00007FF7D72C22D1]
+	GetHandleVerifier [0x00007FF7D777C96D+3378253]
+	GetHandleVerifier [0x00007FF7D77C8497+3688311]
+	GetHandleVerifier [0x00007FF7D77BD1CB+3642539]
+	GetHandleVerifier [0x00007FF7D750A6B6+813462]
+	(No symbol) [0x00007FF7D73CAB5F]
+	(No symbol) [0x00007FF7D73C6B74]
+	(No symbol) [0x00007FF7D73C6D10]
+	(No symbol) [0x00007FF7D73B5C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Khong co kieu cong viec việc chính
+Khòn co status nao thoa man mới tạo
+Dự án triển khai hệ thống quản lý khách hàng (CRM) - Case: 35 - Lỗi khi lưu jobcard Dự án triển khai hệ thống quản lý khách hàng (CRM)
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 353, in __finJobCard
+    __save(browser)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 52, in __save
+    save_btn.click()
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div _ngcontent-gxo-c102="" slot="end" class="btnHeader ng-star-inserted">...</div> is not clickable at point (876, 28). Other element would receive the click: <ion-modal class="md modal-default hydrated show-modal" id="ion-overlay-16" no-router="" tabindex="-1" style="z-index: 20016;">...</ion-modal>
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D744B095+29557]
+	(No symbol) [0x00007FF7D73BFA50]
+	(No symbol) [0x00007FF7D727B56A]
+	(No symbol) [0x00007FF7D72D737E]
+	(No symbol) [0x00007FF7D72D4DCC]
+	(No symbol) [0x00007FF7D72D2288]
+	(No symbol) [0x00007FF7D72D149A]
+	(No symbol) [0x00007FF7D72C354E]
+	(No symbol) [0x00007FF7D72F718A]
+	(No symbol) [0x00007FF7D72C2E86]
+	(No symbol) [0x00007FF7D72F73A0]
+	(No symbol) [0x00007FF7D731851C]
+	(No symbol) [0x00007FF7D72F6F33]
+	(No symbol) [0x00007FF7D72C116F]
+	(No symbol) [0x00007FF7D72C22D1]
+	GetHandleVerifier [0x00007FF7D777C96D+3378253]
+	GetHandleVerifier [0x00007FF7D77C8497+3688311]
+	GetHandleVerifier [0x00007FF7D77BD1CB+3642539]
+	GetHandleVerifier [0x00007FF7D750A6B6+813462]
+	(No symbol) [0x00007FF7D73CAB5F]
+	(No symbol) [0x00007FF7D73C6B74]
+	(No symbol) [0x00007FF7D73C6D10]
+	(No symbol) [0x00007FF7D73B5C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Khong co workflow nao thoa man.
+Hợp đồng cung cấp dịch vụ dữ liệu - Case: 36 - Lỗi khi tìm nhân viên cho jobcard Hợp đồng cung cấp dịch vụ dữ liệu
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 386, in __finJobCard
+    staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+                                                                                    ^^^^^^^^^^^^
+NameError: name 'jobcard_name' is not defined
+Phát triển API cho ứng dụng mới - Case: 30 - Lỗi khi chọn ngày kết thúc cho jobcard Phát triển API cho ứng dụng mới
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 292, in __finJobCard
+    __selectStartOrEndDate(browser, start_date_compile, "start")
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 137, in __selectStartOrEndDate
+    next_month_btn = ion_datetime_shadow.find_element(By.CSS_SELECTOR,'[class="calendar-next-prev"]')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\shadowroot.py", line 53, in find_element
+    return self._execute(Command.FIND_ELEMENT_FROM_SHADOW_ROOT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\shadowroot.py", line 82, in _execute
+    return self.session.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[class="calendar-next-prev"]"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D744B095+29557]
+	(No symbol) [0x00007FF7D73BFA50]
+	(No symbol) [0x00007FF7D727B56A]
+	(No symbol) [0x00007FF7D72CF695]
+	(No symbol) [0x00007FF7D72CF92C]
+	(No symbol) [0x00007FF7D72C2FFC]
+	(No symbol) [0x00007FF7D72F71CF]
+	(No symbol) [0x00007FF7D72C2E86]
+	(No symbol) [0x00007FF7D72F73A0]
+	(No symbol) [0x00007FF7D731851C]
+	(No symbol) [0x00007FF7D72F6F33]
+	(No symbol) [0x00007FF7D72C116F]
+	(No symbol) [0x00007FF7D72C22D1]
+	GetHandleVerifier [0x00007FF7D777C96D+3378253]
+	GetHandleVerifier [0x00007FF7D77C8497+3688311]
+	GetHandleVerifier [0x00007FF7D77BD1CB+3642539]
+	GetHandleVerifier [0x00007FF7D750A6B6+813462]
+	(No symbol) [0x00007FF7D73CAB5F]
+	(No symbol) [0x00007FF7D73C6B74]
+	(No symbol) [0x00007FF7D73C6D10]
+	(No symbol) [0x00007FF7D73B5C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Khong co workflow nao thoa man.
+Hợp đồng tích hợp hệ thống ERP - Case: 31 - Lỗi khi tìm nhân viên cho jobcard Hợp đồng tích hợp hệ thống ERP
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 386, in __finJobCard
+    staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+                                                                                    ^^^^^^^^^^^^
+NameError: name 'jobcard_name' is not defined
+Nâng cấp phần mềm quản lý kho - Case: 32 - Không có bảng việc tên GAMMA (PYTHON - DJANGO) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D744B095+29557]
+	(No symbol) [0x00007FF7D73BFA50]
+	(No symbol) [0x00007FF7D727B56A]
+	(No symbol) [0x00007FF7D72CF695]
+	(No symbol) [0x00007FF7D72CF8EC]
+	(No symbol) [0x00007FF7D731B777]
+	(No symbol) [0x00007FF7D72F71CF]
+	(No symbol) [0x00007FF7D731851C]
+	(No symbol) [0x00007FF7D72F6F33]
+	(No symbol) [0x00007FF7D72C116F]
+	(No symbol) [0x00007FF7D72C22D1]
+	GetHandleVerifier [0x00007FF7D777C96D+3378253]
+	GetHandleVerifier [0x00007FF7D77C8497+3688311]
+	GetHandleVerifier [0x00007FF7D77BD1CB+3642539]
+	GetHandleVerifier [0x00007FF7D750A6B6+813462]
+	(No symbol) [0x00007FF7D73CAB5F]
+	(No symbol) [0x00007FF7D73C6B74]
+	(No symbol) [0x00007FF7D73C6D10]
+	(No symbol) [0x00007FF7D73B5C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Xây dựng hệ thống an ninh mạng - Case: 33 - Không có bảng việc tên THETA (C# .NET) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D744B095+29557]
+	(No symbol) [0x00007FF7D73BFA50]
+	(No symbol) [0x00007FF7D727B56A]
+	(No symbol) [0x00007FF7D72CF695]
+	(No symbol) [0x00007FF7D72CF8EC]
+	(No symbol) [0x00007FF7D731B777]
+	(No symbol) [0x00007FF7D72F71CF]
+	(No symbol) [0x00007FF7D731851C]
+	(No symbol) [0x00007FF7D72F6F33]
+	(No symbol) [0x00007FF7D72C116F]
+	(No symbol) [0x00007FF7D72C22D1]
+	GetHandleVerifier [0x00007FF7D777C96D+3378253]
+	GetHandleVerifier [0x00007FF7D77C8497+3688311]
+	GetHandleVerifier [0x00007FF7D77BD1CB+3642539]
+	GetHandleVerifier [0x00007FF7D750A6B6+813462]
+	(No symbol) [0x00007FF7D73CAB5F]
+	(No symbol) [0x00007FF7D73C6B74]
+	(No symbol) [0x00007FF7D73C6D10]
+	(No symbol) [0x00007FF7D73B5C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng bảo trì định kỳ - Case: 34 - Không có bảng việc tên DELTA (PHP - LARAVEL) nếu có thì sai kí tự
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 226, in __select_tabjob
+    group_selection_tabjob = browser.find_element(By.XPATH,'/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group')
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-modal/ionic-selectable-modal/ion-content/ion-list/ion-item-group"}
+  (Session info: chrome=129.0.6668.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D744B095+29557]
+	(No symbol) [0x00007FF7D73BFA50]
+	(No symbol) [0x00007FF7D727B56A]
+	(No symbol) [0x00007FF7D72CF695]
+	(No symbol) [0x00007FF7D72CF8EC]
+	(No symbol) [0x00007FF7D731B777]
+	(No symbol) [0x00007FF7D72F71CF]
+	(No symbol) [0x00007FF7D731851C]
+	(No symbol) [0x00007FF7D72F6F33]
+	(No symbol) [0x00007FF7D72C116F]
+	(No symbol) [0x00007FF7D72C22D1]
+	GetHandleVerifier [0x00007FF7D777C96D+3378253]
+	GetHandleVerifier [0x00007FF7D77C8497+3688311]
+	GetHandleVerifier [0x00007FF7D77BD1CB+3642539]
+	GetHandleVerifier [0x00007FF7D750A6B6+813462]
+	(No symbol) [0x00007FF7D73CAB5F]
+	(No symbol) [0x00007FF7D73C6B74]
+	(No symbol) [0x00007FF7D73C6D10]
+	(No symbol) [0x00007FF7D73B5C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Khong co kieu cong viec việc chính
+Khòn co status nao thoa man mới tạo
+Dự án triển khai hệ thống quản lý khách hàng (CRM) - Case: 35 - Lỗi khi lưu jobcard Dự án triển khai hệ thống quản lý khách hàng (CRM)
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 353, in __finJobCard
+    __save(browser)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 52, in __save
+    save_btn.click()
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div _ngcontent-kbw-c102="" slot="end" class="btnHeader ng-star-inserted">...</div> is not clickable at point (876, 28). Other element would receive the click: <ion-modal class="md modal-default hydrated show-modal" id="ion-overlay-16" no-router="" tabindex="-1" style="z-index: 20016;">...</ion-modal>
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D744B095+29557]
+	(No symbol) [0x00007FF7D73BFA50]
+	(No symbol) [0x00007FF7D727B56A]
+	(No symbol) [0x00007FF7D72D737E]
+	(No symbol) [0x00007FF7D72D4DCC]
+	(No symbol) [0x00007FF7D72D2288]
+	(No symbol) [0x00007FF7D72D149A]
+	(No symbol) [0x00007FF7D72C354E]
+	(No symbol) [0x00007FF7D72F718A]
+	(No symbol) [0x00007FF7D72C2E86]
+	(No symbol) [0x00007FF7D72F73A0]
+	(No symbol) [0x00007FF7D731851C]
+	(No symbol) [0x00007FF7D72F6F33]
+	(No symbol) [0x00007FF7D72C116F]
+	(No symbol) [0x00007FF7D72C22D1]
+	GetHandleVerifier [0x00007FF7D777C96D+3378253]
+	GetHandleVerifier [0x00007FF7D77C8497+3688311]
+	GetHandleVerifier [0x00007FF7D77BD1CB+3642539]
+	GetHandleVerifier [0x00007FF7D750A6B6+813462]
+	(No symbol) [0x00007FF7D73CAB5F]
+	(No symbol) [0x00007FF7D73C6B74]
+	(No symbol) [0x00007FF7D73C6D10]
+	(No symbol) [0x00007FF7D73B5C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Khong co workflow nao thoa man.
+Hợp đồng cung cấp dịch vụ dữ liệu - Case: 36 - Lỗi khi tìm nhân viên cho jobcard Hợp đồng cung cấp dịch vụ dữ liệu
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 386, in __finJobCard
+    staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+                                                                                    ^^^^^^^^^^^^
+NameError: name 'jobcard_name' is not defined
+Khong co workflow nao thoa man.
+Phát triển API cho ứng dụng mới - Case: 30 - Lỗi khi tìm nhân viên cho jobcard Phát triển API cho ứng dụng mới
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 386, in __finJobCard
+    staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+                                                                                    ^^^^^^^^^^^^
+NameError: name 'jobcard_name' is not defined
+Khong co workflow nao thoa man.
+Hợp đồng tích hợp hệ thống ERP - Case: 31 - Lỗi khi tìm nhân viên cho jobcard Hợp đồng tích hợp hệ thống ERP
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 386, in __finJobCard
+    staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+                                                                                    ^^^^^^^^^^^^
+NameError: name 'jobcard_name' is not defined
+Hợp đồng sản xuất với đối tác nước ngoài - Case: 3 - Lỗi khi chọn ngày kết thúc cho jobcard Hợp đồng sản xuất với đối tác nước ngoài
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 292, in __finJobCard
+    __selectStartOrEndDate(browser, start_date_compile, "start")
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 137, in __selectStartOrEndDate
+    next_month_btn = ion_datetime_shadow.find_element(By.CSS_SELECTOR,'[class="calendar-next-prev"]')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\shadowroot.py", line 53, in find_element
+    return self._execute(Command.FIND_ELEMENT_FROM_SHADOW_ROOT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\shadowroot.py", line 82, in _execute
+    return self.session.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[class="calendar-next-prev"]"}
+  (Session info: chrome=129.0.6668.103); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746FAF695]
+	(No symbol) [0x00007FF746FAF92C]
+	(No symbol) [0x00007FF746FA2FFC]
+	(No symbol) [0x00007FF746FD71CF]
+	(No symbol) [0x00007FF746FA2E86]
+	(No symbol) [0x00007FF746FD73A0]
+	(No symbol) [0x00007FF746FF851C]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Khong co workflow nao thoa man.
+Hợp đồng sản xuất theo đơn đặt hàng - Case: 4 - Lỗi khi tìm nhân viên cho jobcard Hợp đồng sản xuất theo đơn đặt hàng
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 386, in __finJobCard
+    staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+                                                                                    ^^^^^^^^^^^^
+NameError: name 'jobcard_name' is not defined
+Khong co workflow nao thoa man.
+Hợp đồng sản xuất và bảo trì - Case: 5 - Lỗi khi tìm nhân viên cho jobcard Hợp đồng sản xuất và bảo trì
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 386, in __finJobCard
+    staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+                                                                                    ^^^^^^^^^^^^
+NameError: name 'jobcard_name' is not defined
+Hợp đồng sản xuất và lắp ráp - Case: 6 - Lỗi khi chọn ngày kết thúc cho jobcard Hợp đồng sản xuất và lắp ráp
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 313, in __finJobCard
+    __selectStartOrEndDate(browser, end_date_compile, "end")
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 132, in __selectStartOrEndDate
+    date_element.click()
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+Khong co workflow nao thoa man.
+Khong co workflow nao thoa man.
+Khong co workflow nao thoa man.
+Hợp đồng sản xuất với đối tác nước ngoài - Khong co nhan vien ten: Phan Duy Dương
+Hợp đồng sản xuất với đối tác nước ngoài - Khong co thoi han hoac khong co du lieu: 10.0
+Hợp đồng sản xuất với đối tác nước ngoài - Khong co don vi hoac khong co du lieu: Giờ
+Hợp đồng sản xuất với đối tác nước ngoài - Khong co dau muc ten Tạo hợp đồng hoac khong co du lieu
+Khong co workflow nao thoa man.
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co dau muc ten Duyệt hợp đồng hoac khong co du lieu
+Hợp đồng sản xuất theo đơn đặt hàng - Khong co dau muc ten None hoac khong co du lieu
+Khong co workflow nao thoa man.
+Hợp đồng sản xuất và bảo trì - Khong co dau muc ten Tạo hợp đồng hoac khong co du lieu
+Hợp đồng sản xuất và bảo trì - Khong co dau muc ten Duyệt hợp đồng hoac khong co du lieu
+Hợp đồng sản xuất và bảo trì - Khong co dau muc ten None hoac khong co du lieu

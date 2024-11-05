@@ -1,0 +1,2571 @@
+Hợp đồng tích hợp hệ thống ERP - Case: 31 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF6648BFCC5]
+	(No symbol) [0x00007FF66496EE07]
+	(No symbol) [0x00007FF664987E21]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 265, in __finJobCard
+    __select_tabjob(browser, list_jobcards[i].tab_job)
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 208, in __select_tabjob
+    tabjob_selection_ele = browser.find_element(By.XPATH,'//*[@id="main-content"]/app-create-card-job/ion-content/div/div[1]/ion-item/ionic-selectable/div/button')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF6648BFCC5]
+	(No symbol) [0x00007FF66496EE07]
+	(No symbol) [0x00007FF664987E21]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 268, in __finJobCard
+    browser.get("https://ionic.3i.com.vn/time-keeping")
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 363, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF6648BFCC5]
+	(No symbol) [0x00007FF66496EE07]
+	(No symbol) [0x00007FF664987E21]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Nâng cấp phần mềm quản lý kho - Case: 32 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF6648BFCC5]
+	(No symbol) [0x00007FF66496EE07]
+	(No symbol) [0x00007FF664987E21]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF6648BFCC5]
+	(No symbol) [0x00007FF66496EE07]
+	(No symbol) [0x00007FF664987E21]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Xây dựng hệ thống an ninh mạng - Case: 33 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF6648BFCC5]
+	(No symbol) [0x00007FF66496EE07]
+	(No symbol) [0x00007FF664987E21]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF6648BFCC5]
+	(No symbol) [0x00007FF66496EE07]
+	(No symbol) [0x00007FF664987E21]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng bảo trì định kỳ - Case: 34 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF6648BFCC5]
+	(No symbol) [0x00007FF66496EE07]
+	(No symbol) [0x00007FF664987E21]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF6648BFCC5]
+	(No symbol) [0x00007FF66496EE07]
+	(No symbol) [0x00007FF664987E21]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Dự án triển khai hệ thống quản lý khách hàng (CRM) - Case: 35 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF6648BFCC5]
+	(No symbol) [0x00007FF66496EE07]
+	(No symbol) [0x00007FF664987E21]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF6648BFCC5]
+	(No symbol) [0x00007FF66496EE07]
+	(No symbol) [0x00007FF664987E21]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng cung cấp dịch vụ dữ liệu - Case: 36 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF6648BFCC5]
+	(No symbol) [0x00007FF66496EE07]
+	(No symbol) [0x00007FF664987E21]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.101)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664ABB095+29557]
+	(No symbol) [0x00007FF664A2FA50]
+	(No symbol) [0x00007FF6648EB56A]
+	(No symbol) [0x00007FF6648BFCC5]
+	(No symbol) [0x00007FF66496EE07]
+	(No symbol) [0x00007FF664987E21]
+	(No symbol) [0x00007FF664966F33]
+	(No symbol) [0x00007FF66493116F]
+	(No symbol) [0x00007FF6649322D1]
+	GetHandleVerifier [0x00007FF664DEC96D+3378253]
+	GetHandleVerifier [0x00007FF664E38497+3688311]
+	GetHandleVerifier [0x00007FF664E2D1CB+3642539]
+	GetHandleVerifier [0x00007FF664B7A6B6+813462]
+	(No symbol) [0x00007FF664A3AB5F]
+	(No symbol) [0x00007FF664A36B74]
+	(No symbol) [0x00007FF664A36D10]
+	(No symbol) [0x00007FF664A25C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng tích hợp hệ thống ERP - Case: 31 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 386, in __finJobCard
+    staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+                                                                                    ^^^^^^^^^^^^
+NameError: name 'jobcard_name' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 395, in __finJobCard
+    browser.get("https://ionic.3i.com.vn/time-keeping")
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 363, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Nâng cấp phần mềm quản lý kho - Case: 32 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Xây dựng hệ thống an ninh mạng - Case: 33 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng bảo trì định kỳ - Case: 34 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Dự án triển khai hệ thống quản lý khách hàng (CRM) - Case: 35 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+  - Case: 36 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng sản xuất và lắp ráp - Case: 6 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 313, in __finJobCard
+    __selectStartOrEndDate(browser, end_date_compile, "end")
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 132, in __selectStartOrEndDate
+    date_element.click()
+    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'click'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 316, in __finJobCard
+    browser.get("https://ionic.3i.com.vn/time-keeping")
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 363, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng sản xuất theo khối lượng lớn - Case: 7 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng sản xuất độc quyền - Case: 8 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng liên doanh sản xuất - Case: 9 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Quản lý tồn kho - Case: 10 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Bảo trì máy móc thiết bị - Case: 11 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Giám sát quy trình sản xuất - Case: 12 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Phân tích hiệu suất sản xuất - Case: 13 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Quản lý dây chuyền sản xuất - Case: 14 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Quản lý an toàn lao động - Case: 15 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Xây dựng chiến lược tiếp thị - Case: 16 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Quản lý chiến dịch quảng cáo - Case: 17 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Nghiên cứu thị trường - Case: 18 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Quản lý nội dung - Case: 19 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Quản lý mối quan hệ khách hàng - Case: 20 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Phân tích đối thủ cạnh tranh - Case: 21 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Quản lý thương hiệu - Case: 22 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Dự án xây dựng - Case: 23 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng sản xuất với đối tác nước ngoài - Case: 24 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng sản xuất theo đơn đặt hàng - Case: 25 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng sản xuất và bảo trì - Case: 26 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Nghiên cứu phát triển sản phẩm mới - Case: 27 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng cung cấp dịch vụ bảo trì hệ thống - Case: 28 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Thiết kế và triển khai giao diện người dùng - Case: 29 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Phát triển API cho ứng dụng mới - Case: 30 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng tích hợp hệ thống ERP - Case: 31 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Nâng cấp phần mềm quản lý kho - Case: 32 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Xây dựng hệ thống an ninh mạng - Case: 33 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng bảo trì định kỳ - Case: 34 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Dự án triển khai hệ thống quản lý khách hàng (CRM) - Case: 35 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+  - Case: 36 - An error occurred: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+Traceback (most recent call last):
+  File "c:\project\automation_test\jobcard_automation_app\jobcard_test.py", line 258, in __finJobCard
+    add_jobcard_element =  browser.find_element(By.XPATH, '/html/body/app-root/ion-app/ion-split-pane/ion-router-outlet/app-time-keeping/ion-header/ion-toolbar/div/div/a[1]')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\vietnam3i\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.103)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746F2FCC5]
+	(No symbol) [0x00007FF746FDEE07]
+	(No symbol) [0x00007FF746FF7E21]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+
+Hợp đồng sản xuất theo đơn đặt hàng - Element not found: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/ion-app/ion-toast"}
+  (Session info: chrome=129.0.6668.103); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF74712B095+29557]
+	(No symbol) [0x00007FF74709FA50]
+	(No symbol) [0x00007FF746F5B56A]
+	(No symbol) [0x00007FF746FAF695]
+	(No symbol) [0x00007FF746FAF8EC]
+	(No symbol) [0x00007FF746FFB777]
+	(No symbol) [0x00007FF746FD71CF]
+	(No symbol) [0x00007FF746FF851C]
+	(No symbol) [0x00007FF746FD6F33]
+	(No symbol) [0x00007FF746FA116F]
+	(No symbol) [0x00007FF746FA22D1]
+	GetHandleVerifier [0x00007FF74745C96D+3378253]
+	GetHandleVerifier [0x00007FF7474A8497+3688311]
+	GetHandleVerifier [0x00007FF74749D1CB+3642539]
+	GetHandleVerifier [0x00007FF7471EA6B6+813462]
+	(No symbol) [0x00007FF7470AAB5F]
+	(No symbol) [0x00007FF7470A6B74]
+	(No symbol) [0x00007FF7470A6D10]
+	(No symbol) [0x00007FF747095C1F]
+	BaseThreadInitThunk [0x00007FF8DEA37374+20]
+	RtlUserThreadStart [0x00007FF8E007CC91+33]
+

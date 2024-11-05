@@ -250,7 +250,7 @@ def __select_tabjob(browser, tabjob_name):
 
 def __finJobCard(browser,list_jobcards,list_staffs,list_tasks):
 
-    for i in range(29,len(list_jobcards)):
+    for i in range(2,len(list_jobcards)):
         count_case = i
         count_error = 0
         try:
@@ -383,7 +383,7 @@ def __finJobCard(browser,list_jobcards,list_staffs,list_tasks):
 
             try:
                 print(len(list_staffs))
-                staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == jobcard_name.strip().lower()]
+                staffs = [staff for staff in list_staffs if (staff.card_job).strip().lower() == list_jobcards[i].name.strip().lower()]
                 if len(staffs) == 0:
                     browser.get("https://ionic.3i.com.vn/time-keeping")
                     time.sleep(1)
