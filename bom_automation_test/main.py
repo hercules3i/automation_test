@@ -1,6 +1,6 @@
-from Excel import LoadSimpleData
+from Excel import LoadSimpleData,LoadExtendedData
 from Automation_test import AutoTest
 
 if __name__ == '__main__':
-    list_tasks = LoadSimpleData()
+    list_tasks = LoadExtendedData()
     AutoTest(list_tasks)

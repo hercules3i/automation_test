@@ -32,7 +32,11 @@ class Warehouse:
             self.specification = ""
             self.tail = ""
             self.not_good = ""
-
+            self.recoverable_cost = ""
+            self.scrap = ""
+            self.lost_rati = ""
+            self.cost = ""
+            self.steel_type = ""
         def IsNone(self) -> bool:
             if (self.name is None
                     and self.quantity is None

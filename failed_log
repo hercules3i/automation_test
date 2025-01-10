@@ -22,3 +22,20 @@
 2024-11-05 16:10:35.732946 - Đóng gói - Case: 2 - None - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của H B 961 10.9 PlainM20x1.5x50 lớn hơn số lượng nhập
 2024-11-05 16:11:14.792943 - Đóng gói - Case: 3 - [WORKORDER_T9.2024_12] Lệnh sản xuất 28/9 L2 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
 2024-11-05 16:11:54.116070 - Đóng gói - Case: 4 - [WORKORDER_T9.2024_12] Lệnh sản xuất 28/9 L2 - Ca 2: 13:30 - 17:30 - Failed: Số lượng NG của lớn hơn số lượng nhập
+2025-01-07 13:47:33.019089 - Công đoạn kéo - Case: 1 - WORKORDER_T1.2025_01 - Ca 2: 13:30 - 17:30 - Failed: Có lỗi xảy ra khi thêm
+2025-01-07 13:54:56.197389 - Công đoạn kéo - Case: 1 - WORKORDER_T1.2025_01 - Ca 2: 13:30 - 17:30 - Failed: Có lỗi xảy ra khi thêm
+2025-01-07 13:58:22.161713 - Công đoạn kéo - Case: 1 - WORKORDER_T1.2025_01 - Ca 2: 13:30 - 17:30 - Failed: Có lỗi xảy ra khi thêm
+2025-01-07 14:00:04.341685 - Công đoạn kéo - Case: 3 - WORKORDER_T1.2025_01 - Ca 2: 13:30 - 17:30 - Failed: Có lỗi xảy ra khi thêm
+2025-01-07 14:06:18.835881 - Công đoạn kéo - Case: 6 - WORKORDER_T1.2025_01 - Ca 1: 08:00 - 12:00 - Failed: Số lượng xuất vượt quá số lượng còn lại trên chuyền
+2025-01-07 14:09:41.321083 - Công đoạn kéo - Case: 1 - WORKORDER_T1.2025_01 - Ca 2: 13:30 - 17:30 - Failed: Đã nhập liệu phiên 11 ở bước này, vui lòng cập nhật
+2025-01-07 15:30:44.733843 - Công đoạn kéo - Case: 1 - WORKORDER_T1.2025_01 - Ca 2: 13:30 - 17:30 - Failed: Attribute data is null
+2025-01-07 15:52:53.257905 - Công đoạn dập và ren - Case: 2 - WORKORDER_T1.2025_01 - Ca 2: 13:30 - 17:30 - Failed: Số lượng xuất vượt quá số lượng còn lại trên chuyền
+2025-01-07 16:09:16.803916 - Công đoạn kéo - Case: 3 - WORKORDER_T1.2025_01 - Ca 2: 13:30 - 17:30 - Failed: Attribute data is null
+2025-01-07 16:26:01.253743 - Công đoạn dập và ren - Case: 3 - WORKORDER_T1.2025_01 - Ca 2: 13:30 - 17:30 - Failed: 
+2025-01-07 17:32:10.268627 - Công đoạn dập và ren - Case: 1 - WORKORDER_T1.2025_01 - Ca 2: 13:30 - 17:30 - Failed: 
+2025-01-09 17:39:52.752645 - Công đoạn kéo - Case: 3 - [WORKORDER_T9.2024_04] Lệnh sản xuất 26/9 L1 - Ca 2: 13:30 - 17:30 - Failed: Attribute data is null
+2025-01-10 09:51:01.771413 - Công đoạn kéo - Case: 3 - [WORKORDER_T9.2024_04] Lệnh sản xuất 26/9 L1 - Ca 2: 13:30 - 17:30 - Failed: Attribute data is null
+2025-01-10 09:51:18.574099 - Công đoạn kéo - Case: 4 - [WORKORDER_T9.2024_04] Lệnh sản xuất 26/9 L1 - Ca 1: 08:00 - 12:00 - Failed: Attribute data is null
+2025-01-10 09:51:39.644828 - Công đoạn kéo - Case: 5 - [WORKORDER_T9.2024_02] Lệnh sản xuất 25/9 L1 - Ca 2: 13:30 - 17:30 - Failed: Attribute data is null
+2025-01-10 10:15:02.258710 - Công đoạn kéo - Case: 3 - [WORKORDER_T9.2024_04] Lệnh sản xuất 26/9 L1 - Ca 2: 13:30 - 17:30 - Failed: Attribute data is null
+2025-01-10 10:15:19.214480 - Công đoạn kéo - Case: 4 - [WORKORDER_T9.2024_04] Lệnh sản xuất 26/9 L1 - Ca 1: 08:00 - 12:00 - Failed: Attribute data is null
