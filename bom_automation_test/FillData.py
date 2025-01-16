@@ -6,7 +6,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 import time
 from SelectElement import __selectWorkOrder, __selectProductAtrribute
 
-sleeping_time = 0.25
+sleeping_time = 0.5
 
 def __fillExtendedDataToTable(row_index: int, browser, delay: int, product):
     attribute_element = WebDriverWait(browser, delay).until(

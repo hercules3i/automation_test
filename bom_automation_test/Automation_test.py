@@ -25,7 +25,7 @@ username = "admin"
 password = "winwin2021"
 
 delay = 5
-sleeping_time = 0.25
+sleeping_time = 0.5
 
 
 def __login():
@@ -65,7 +65,6 @@ def __enterWarehouse(warehouse: Warehouse, bom: Bom, in_out_value: str):
         __enterMachines(bom.machines, browser)
         __enterWorkers(bom.workers, browser)
         __fillDataToTable(warehouse.input.product_list, browser, delay,"Đầu vào")
-        print(warehouse.input.product_list)
         button_save = browser.find_element(By.XPATH,
                                            '//*[@id="contentMain"]/div[4]/div[2]/div/form/div[1]/div/div/div[2]/div/div/div[2]')
         actionChains.move_to_element(button_save).perform()
@@ -134,10 +133,10 @@ def AutoTest(tasks: list):
                 __findWorkingFrige(task.name_of_task,browser=browser, delay=delay)
                 bom = task.list_boms[i_bom]
                 handleInputOutput(bom)
-                button_save = browser.find_element(By.XPATH,
-                                                   '//*[@id="contentMain"]/div[4]/div[2]/div/form/div[1]/div/div/div[2]/div/div/div[2]')
-                actionChains.move_to_element(button_save).perform()
-                button_save.click()
+                # button_save = browser.find_element(By.XPATH,
+                #                                    '//*[@id="contentMain"]/div[4]/div[2]/div/form/div[1]/div/div/div[2]/div/div/div[2]')
+                # actionChains.move_to_element(button_save).perform()
+                # button_save.click()
 
                 toast_container = browser.find_element(By.ID, 'toast-container')
                 message = toast_container.find_element(By.CLASS_NAME, 'toast-message').text

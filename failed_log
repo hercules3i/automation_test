@@ -5,3 +5,11 @@
 2025-01-14 12:36:06.989886 - Cắt Laze - Case: 1 - WORKORDER_T1.2025_02 - Ca 3: 18:00 - 22:00 - Failed: Đã nhập liệu phiên 77 ở bước này, vui lòng cập nhật
 2025-01-14 12:37:20.681095 - Cắt Laze - Case: 1 - WORKORDER_T1.2025_02 - Ca 1: 08:00 - 12:00 - Failed: Đã nhập liệu phiên 65 ở bước này, vui lòng cập nhật
 2025-01-15 09:59:51.140396 - Công đoạn kéo - Case: 1 - WORKORDER_T1.2025_01 - Ca 2: 13:30 - 17:30 - Failed: Attribute data is null
+2025-01-15 14:57:12.935446 - Xả tôn - Case: 6 - WORKORDER_T1.2025_02 - Ca 1: 08:00 - 12:00 - Failed: Đã nhập liệu phiên 75 ở bước này, vui lòng cập nhật
+2025-01-15 14:58:27.150337 - Xả tôn - Case: 8 - WORKORDER_T1.2025_02 - Ca 3: 18:00 - 22:00 - Failed: Đã nhập liệu phiên 113 ở bước này, vui lòng cập nhật
+2025-01-15 15:47:06.951881 - Xả tôn - Case: 1 - WORKORDER_T1.2025_02 - Ca 1: 08:00 - 12:00 - Failed: Đã nhập liệu phiên 147 ở bước này, vui lòng cập nhật
+2025-01-15 16:05:35.793970 - Xả tôn - Case: 2 - WORKORDER_T1.2025_02 - Ca 2: 13:30 - 17:30 - Failed: Đã nhập liệu phiên 82 ở bước này, vui lòng cập nhật
+2025-01-15 17:01:25.144605 - Hàn - Case: 2 - WORKORDER_T1.2025_02 - Ca 1: 08:00 - 12:00 - Failed: Số lượng xuất vượt quá số lượng còn lại trên chuyền
+2025-01-15 21:35:37.657814 - Hàn - Case: 2 - WORKORDER_T1.2025_02 - Ca 1: 08:00 - 12:00 - Failed: Số lượng xuất vượt quá số lượng còn lại trên chuyền
+2025-01-16 09:00:57.519716 - Chấn - Case: 2 - WORKORDER_T1.2025_02 - Ca 1: 08:00 - 12:00 - Failed: Số lượng xuất vượt quá số lượng còn lại trên chuyền
+2025-01-16 09:08:44.626614 - Hàn - Case: 2 - WORKORDER_T1.2025_02 - Ca 1: 08:00 - 12:00 - Failed: Số lượng xuất vượt quá số lượng còn lại trên chuyền

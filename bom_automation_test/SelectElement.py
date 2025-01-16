@@ -6,7 +6,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 import time
 
 
-sleeping_time = 0.25
+sleeping_time = 0.5
 def __isWorkOrder(text, work_order) -> bool:
     match = re.search(r'\[(.*?)\]', text)
     if match:
@@ -41,7 +41,7 @@ def __selectWorkOrder(work_order: str,browser, delay:int):
             input_work_order_element = work_order_element.find_element(By.TAG_NAME, 'input')
             input_work_order_element.clear()
             input_work_order_element.send_keys(work_order)
-            time.sleep(1)
+            time.sleep(2)
             li_work_order = work_order_element.find_element(By.CLASS_NAME, 'ui-select-choices-group')
 
             count_id = 3

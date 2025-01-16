@@ -1,4 +1,4 @@
-from Excel import LoadSimpleData
+from Excel import LoadSimpleData,LoadSimpleData2
 from Automation_test import AutoTest
 import openpyxl
 import os

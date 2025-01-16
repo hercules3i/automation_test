@@ -2,7 +2,7 @@ import openpyxl
 from Task import TaskSimpleData
 from Bom import Bom, Warehouse
 import os
-work_book = openpyxl.load_workbook(os.path.join("data","Data test BOM (HDG) (1).xlsx"))
+work_book = openpyxl.load_workbook(os.path.join("data","Data test BOM (HDG) (1) (2).xlsx"))
 
 list_workings = ["Công đoạn kéo", "Công đoạn dập và ren",
                  "Nhiệt", "Xi mạ", "Đóng gói"]
@@ -12,7 +12,7 @@ list_workings2 = ["Xả tôn", "Ống gió",
 
 
 def LoadSimpleData() -> list:
-    sheet = work_book["Sheet2"]
+    sheet = work_book["Sheet1"]
     max_column = sheet.max_column
     max_row = sheet.max_row
 
