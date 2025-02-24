@@ -1,0 +1,5 @@
+Thuộc tính: //*[@id="1"]/div/table/tbody/tr[5]/td[7]
+Chọn thuộc tính:  //*[@id="modal-body"]/div/div/div/div/div/div/div[1]/form/div/div[1]/div/div
+Nhập giá trị //*[@id="modal-body"]/div/div/div/div/div/div/div[1]/form/div/div[2]/div/input
+Thêm mới: //*[@id="modal-body"]/div/div/div/div/div/div/div[1]/form/div/div[3]/div[1]/div/a/i
+Save: //*[@id="main-content-vatco"]/div[1]/div/div/div[3]/div/div[2]
